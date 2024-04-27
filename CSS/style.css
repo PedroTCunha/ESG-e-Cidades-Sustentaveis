@@ -46,15 +46,49 @@ body {
   section {
     padding: 20px;
   }
-  
+/*adicionando aqui*/
   .pentagon {
+    width: 350px; /* Adjust size as needed */
+    height: 300px; /* Adjust size as needed */
     position: relative;
-    width: 200px;
-    height: 200px;
-    background-color: #007bff;
-    margin: 20px auto;
+    margin: auto;
+    margin-bottom: auto;
+    padding: auto;
   }
-  button .governança{
+  
+  .pentagon button {
+    position: absolute;
+    width: 100px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    transform-origin: 50% 100%;
+  }
+  
+  .pentagon button:nth-child(1) {
+    top: 0;
+    left: 50%;
+  }
+  
+  .pentagon button:nth-child(2) {
+    top: 50%;
+    left: 100%;
+  }
+  
+  .pentagon button:nth-child(3) {
+    top: 100%;
+    left: 75%;
+  }
+  
+  .pentagon button:nth-child(4) {
+    top: 100%;
+    left: 25%;
+    margin-bottom: 20px;
+  }
+  
+  .pentagon button:nth-child(5) {
+    top: 50%;
+    left: 0;
+    margin-bottom: 20px;
+  }
     
   }
   footer {
