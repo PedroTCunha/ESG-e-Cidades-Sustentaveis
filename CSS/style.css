@@ -59,7 +59,17 @@ body {
   section {
     padding: 20px;
   }
+
 /*adicionando aqui*/
+
+.pentagon-background {
+  margin-left: 50px;
+  width: 350px; /* largura desejada */
+  height: 300px; /* altura desejada */
+  background-color: #007bff; /* cor de fundo desejada */
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  z-index: -1;
+}
   .pentagon {
     width: 350px; /* Adjust size as needed */
     height: 300px; /* Adjust size as needed */
@@ -70,6 +80,7 @@ body {
   }
   
   .pentagon button {
+    z-index: 1;
     position: absolute;
     width: 100px; /* Adjust size as needed */
     height: 40px; /* Adjust size as needed */
@@ -77,29 +88,29 @@ body {
   }
   
   .pentagon button:nth-child(1) {
-    top: 0;
+    top: -13%;
     left: 50%;
   }
   
   .pentagon button:nth-child(2) {
-    top: 50%;
-    left: 100%;
+    top: 30%;
+    left: 114%;
   }
   
   .pentagon button:nth-child(3) {
     top: 100%;
-    left: 75%;
+    left: 85%;
   }
   
   .pentagon button:nth-child(4) {
     top: 100%;
-    left: 25%;
+    left: 15%;
     margin-bottom: 20px;
   }
   
   .pentagon button:nth-child(5) {
-    top: 50%;
-    left: 0;
+    top: 30%;
+    left: -14%;
     margin-bottom: 20px;
   }
     
