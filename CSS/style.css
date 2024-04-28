@@ -79,7 +79,7 @@ body {
     padding: auto;
   }
   
-  .pentagon button {
+  .pentagon a {
     z-index: 1;
     position: absolute;
     width: 100px; /* Adjust size as needed */
@@ -87,28 +87,28 @@ body {
     transform-origin: 50% 100%;
   }
   
-  .pentagon button:nth-child(1) {
+  .pentagon a:nth-child(1) {
     top: -13%;
     left: 50%;
   }
   
-  .pentagon button:nth-child(2) {
+  .pentagon a:nth-child(2) {
     top: 30%;
     left: 114%;
   }
   
-  .pentagon button:nth-child(3) {
+  .pentagon a:nth-child(3) {
     top: 100%;
     left: 85%;
   }
   
-  .pentagon button:nth-child(4) {
+  .pentagon a:nth-child(4) {
     top: 100%;
     left: 15%;
     margin-bottom: 20px;
   }
   
-  .pentagon button:nth-child(5) {
+  .pentagon a:nth-child(5) {
     top: 30%;
     left: -14%;
     margin-bottom: 20px;
