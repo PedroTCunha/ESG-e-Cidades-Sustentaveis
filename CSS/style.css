@@ -60,6 +60,33 @@ body {
     padding: 20px;
   }
 
+  #esg img {
+    float: right; /* Faz a imagem flutuar para a direita */
+    margin-left: 50px; /* Adiciona um espaço entre a imagem e o texto */
+  }
+  
+  #esg div {
+    overflow: hidden; /* Isso corrige o layout para envolver o conteúdo */
+  }
+
+  #sustentabilidade img {
+    float: left; /* Faz a imagem flutuar para a esquerda */
+    margin-right: 50px; /* Adiciona um espaço entre a imagem e o texto */
+  }
+  
+  #sustentabilidade div {
+    overflow: hidden; /* Isso corrige o layout para envolver o conteúdo */
+  }
+
+  #relacionamento img{
+    float: right;
+    margin-right: 50px;
+  }
+
+  #relacionamento div{
+    overflow: hidden;
+  }
+
 /*adicionando aqui*/
 
 .pentagon-background {
