@@ -56,7 +56,162 @@
     </div>
 </section>
 
-  
+<section>
+    <center><div class="flashcards-container">
+        <div class="flashcard">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>HTML</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>HyperText Markup Language (HTML) é a linguagem padrão para criação de páginas web.</p>
+                    <p>Dificuldade: Fácil</p>
+                </div>
+            </div>
+        </div>
+        <div class="flashcard">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>CSS</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>Cascading Style Sheets (CSS) é uma linguagem de estilo usada para descrever a apresentação de um documento HTML.</p>
+                    <p>Dificuldade: Fácil</p>
+                </div>
+            </div>
+        </div>
+        <div class="flashcard">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>JavaScript</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>JavaScript é uma linguagem de programação que permite implementar funcionalidades complexas em páginas web.</p>
+                    <p>Dificuldade: Média</p>
+                </div>
+            </div>
+        </div>
+        <div class="flashcard">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>Bootstrap</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>Bootstrap é um framework front-end que facilita o desenvolvimento web responsivo e móvel.</p>
+                    <p>Dificuldade: Média</p>
+                </div>
+            </div>
+        </div>
+        <div class="flashcard">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>API</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>Application Programming Interface (API) é um conjunto de regras e definições que permite a comunicação entre softwares.</p>
+                    <p>Dificuldade: Média</p>
+                </div>
+            </div>
+        </div>
+        <div class="flashcard">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>SQL</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>Structured Query Language (SQL) é uma linguagem padrão para manipulação de bancos de dados relacionais.</p>
+                    <p>Dificuldade: Difícil</p>
+                </div>
+            </div>
+        </div>
+        <div class="flashcard">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>React</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>React é uma biblioteca JavaScript de código aberto para criar interfaces de usuário.</p>
+                    <p>Dificuldade: Difícil</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</center>
+</section>
+
+<section>
+    <div class="carousel">
+        <div class="slide">
+            <form id="form1" class="question" action="#" method="post">
+                <p>Pergunta 1: Qual é a capital do Brasil?</p>
+                <div class="options">
+                    <button type="button" onclick="nextSlide('form1', 'form2');" name="pergunta1" value="a">Rio de Janeiro</button>
+                    <button type="button" onclick="nextSlide('form1', 'form2');" name="pergunta1" value="b">São Paulo</button>
+                    <button type="button" onclick="nextSlide('form1', 'form2');" name="pergunta1" value="c">Brasília</button>
+                </div>
+            </form>
+        </div>
+        <div class="slide" style="display: none;">
+            <form id="form2" class="question" action="#" method="post">
+                <p>Pergunta 2: Qual é o maior planeta do sistema solar?</p>
+                <div class="options">
+                    <button type="button" onclick="nextSlide('form2', 'form3');" name="pergunta2" value="a">Terra</button>
+                    <button type="button" onclick="nextSlide('form2', 'form3');" name="pergunta2" value="b">Marte</button>
+                    <button type="button" onclick="nextSlide('form2', 'form3');" name="pergunta2" value="c">Júpiter</button>
+                </div>
+            </form>
+        </div>
+        <div class="slide" style="display: none;">
+            <form id="form3" class="question" action="#" method="post">
+                <p>Pergunta 3: Quem escreveu "Dom Quixote"?</p>
+                <div class="options">
+                    <button type="button" onclick="nextSlide('form3', 'form4');" name="pergunta3" value="a">Miguel de Cervantes</button>
+                    <button type="button" onclick="nextSlide('form3', 'form4');" name="pergunta3" value="b">William Shakespeare</button>
+                    <button type="button" onclick="nextSlide('form3', 'form4');" name="pergunta3" value="c">Friedrich Nietzsche</button>
+                </div>
+            </form>
+        </div>
+        <div class="slide" style="display: none;">
+            <form id="form4" class="question" action="#" method="post">
+                <p>Pergunta 4: Qual é o maior oceano do mundo?</p>
+                <div class="options">
+                    <button type="button" onclick="nextSlide('form4', 'form5');" name="pergunta4" value="a">Atlântico</button>
+                    <button type="button" onclick="nextSlide('form4', 'form5');" name="pergunta4" value="b">Índico</button>
+                    <button type="button" onclick="nextSlide('form4', 'form5');" name="pergunta4" value="c">Pacífico</button>
+                </div>
+            </form>
+        </div>
+        <div class="slide" style="display: none;">
+            <form id="form5" class="question" action="#" method="post">
+                <p>Pergunta 5: Qual é o símbolo químico do ouro?</p>
+                <div class="options">
+                    <button type="submit" name="pergunta5" value="a">Ag</button>
+                    <button type="submit" name="pergunta5" value="b">Au</button>
+                    <button type="submit" name="pergunta5" value="c">Fe</button>
+                </div>
+            </form>
+        </div>
+        <div class="slide" style="display: none;">
+            <div class="completion">
+                <p>Parabéns, você completou o questionário!</p>
+                <button type="button" onclick="restartQuiz();">Reiniciar</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function nextSlide(currentFormId, nextFormId) {
+            document.getElementById(currentFormId).parentNode.style.display = 'none';
+            document.getElementById(nextFormId).parentNode.style.display = 'inline-block';
+        }
+
+        function restartQuiz() {
+            document.querySelector('.carousel').scrollLeft = 0; // Volta para a primeira pergunta
+            document.querySelector('.slide').style.display = 'inline-block'; // Mostra a primeira pergunta
+            document.querySelectorAll('.slide')[document.querySelectorAll('.slide').length - 1].style.display = 'none'; // Esconde a mensagem de conclusão
+        }
+    </script>
+</section>  
 
   <footer>
     <p>Desenvolvido por Schooby-doo, &copy; 2024</p>
