@@ -140,53 +140,52 @@ body {
     left: -14%;
     margin-bottom: 20px;
   }
-  .flashcards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    width: 600px;
-    margin-top: 30px;
-}
-.flashcard {
-    width: 200px;
-    height: 300px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    .flashcard {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+    cursor: pointer;
+    float:left;
+  }
+  .card {
+    width: 100%;
+    height: 100%;
     position: relative;
-    margin: 10px;
     transform-style: preserve-3d;
     transition: transform 0.5s;
-}
-.flashcard:hover {
-    transform: rotateY(180deg);
-}
-.flashcard-inner {
+  }
+  .front,
+  .back {
     width: 100%;
     height: 100%;
     position: absolute;
-    backface-visibility: hidden;
-}
-.flashcard-front, .flashcard-back {
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
     padding: 20px;
-    position: absolute;
-    color: #333;
-}
-.flashcard-back {
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+  .front {
+    background-color: #fff;
+    transform: rotateY(0deg);
+  }
+  .back {
+    background-color: #f0f0f0;
     transform: rotateY(180deg);
-}
-
+  }
+  .flashcard:hover .card {
+    transform: rotateY(180deg);
+  }
+  .back-content {
+    display: none;
+  }
+  .flashcard:hover .back-content {
+    display: block;
+  }
 .question {
-            text-align: center;
-            margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 20px;
         }
 .options {
             display: flex;
@@ -207,12 +206,12 @@ body {
 .slide {
             display: inline-block;
             width: 100%;
-            transition: transform 0.5s ease;
+	    transition: transform 0.5s ease;
         }
 .completion {
-            text-align: center;
-            margin-top: 50px;
-        }
+	text-align: center;
+        margin-top: 50px;
+}
 
 
   footer {
