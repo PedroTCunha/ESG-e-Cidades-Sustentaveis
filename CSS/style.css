@@ -77,14 +77,19 @@ body {
     font-size: 40px;
   }
 
+  #esg .esg-container{
+    display: flex; 
+  }
+
   #esg img{
     float: right; /* Faz a imagem flutuar para a direita */
     margin-left: 50px; /* Adiciona um espaço entre a imagem e o texto */
   }
   
   #esg txt{
-    overflow: hidden; /* Isso corrige o layout para envolver o conteúdo */
     text-align: left;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
 
 
@@ -93,29 +98,40 @@ body {
     height: 600px;
   }
 
+  #cs .cs-container{
+    display: flex; 
+  }
+
   #cs h1{
     text-align: right;
     font-size: 40px;
   }
 
   #cs img{
+    float: left;
     margin-right: 50px; /* Adiciona um espaço entre a imagem e o texto */
   }
   
   #cs txt{
-    float: right; 
-    overflow: hidden; /* Isso corrige o layout para envolver o conteúdo */
-
+    text-align: right;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
 
 
 /*Es-cidades*/
+  #es-cidades{
+    height: 300px;
+  }
+
   #es-cidades h1{
     text-align: center;
   }
 
   #es-cidades txt{
-    
+    text-align: justify;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
 
 /*Pilares*/
@@ -171,6 +187,12 @@ body {
     left: -14%;
     margin-bottom: 20px;
   }
+
+  /*Ranking*/
+
+
+  /*Quiz*/
+
 
 
   /*Rodapé*/
