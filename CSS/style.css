@@ -4,7 +4,10 @@ body {
     padding: 0;
     background-color: lightblue;
   }
-  
+ 
+
+
+  /*Cabeçalho*/
   header {
     background: linear-gradient(90deg, #232734 0%, rgba(35,39,52,1) 70%, rgba(255,255,255,1) 100%);
     color: #fff;
@@ -55,39 +58,67 @@ body {
     text-decoration: none;
     color: #232734;
   }
-  
-  section {
-    padding: 20px;
+ 
+
+  .content-container {
+	  width: 1500px;
+	  height: 100%;
+	  padding: 20px;
+	  margin: auto;
   }
 
-  #esg img {
+
+  /*ESG*/
+  #esg{
+    height: 600px;
+  }
+  
+  #esg h1{
+    font-size: 40px;
+  }
+
+  #esg img{
     float: right; /* Faz a imagem flutuar para a direita */
     margin-left: 50px; /* Adiciona um espaço entre a imagem e o texto */
   }
   
-  #esg div {
+  #esg txt{
     overflow: hidden; /* Isso corrige o layout para envolver o conteúdo */
+    text-align: left;
   }
 
-  #sustentabilidade img {
-    float: left; /* Faz a imagem flutuar para a esquerda */
+
+  /*CS*/
+  #cs {
+    height: 600px;
+  }
+
+  #cs h1{
+    text-align: right;
+    font-size: 40px;
+  }
+
+  #cs img{
     margin-right: 50px; /* Adiciona um espaço entre a imagem e o texto */
   }
   
-  #sustentabilidade div {
+  #cs txt{
+    float: right; 
     overflow: hidden; /* Isso corrige o layout para envolver o conteúdo */
+
   }
 
-  #relacionamento img{
-    float: right;
-    margin-right: 50px;
+
+/*Es-cidades*/
+  #es-cidades h1{
+    text-align: center;
   }
 
-  #relacionamento div{
-    overflow: hidden;
+  #es-cidades txt{
+    
   }
 
-/*adicionando aqui*/
+/*Pilares*/
 
 .pentagon-background {
   margin-left: 50px;
@@ -140,87 +171,17 @@ body {
     left: -14%;
     margin-bottom: 20px;
   }
-    .flashcard {
-    width: 300px;
-    height: 200px;
-    perspective: 1000px;
-    cursor: pointer;
-    float:left;
-  }
-  .card {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 0.5s;
-  }
-  .front,
-  .back {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-    backface-visibility: hidden;
-  }
-  .front {
-    background-color: #fff;
-    transform: rotateY(0deg);
-  }
-  .back {
-    background-color: #f0f0f0;
-    transform: rotateY(180deg);
-  }
-  .flashcard:hover .card {
-    transform: rotateY(180deg);
-  }
-  .back-content {
-    display: none;
-  }
-  .flashcard:hover .back-content {
-    display: block;
-  }
-.question {
-    text-align: center;
-    margin-bottom: 20px;
-        }
-.options {
-            display: flex;
-            justify-content: center;
-        }
-.options button {
-            margin-right: 10px;
-            padding: 5px 10px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-.carousel {
-            width: 100%;
-            overflow: hidden;
-            white-space: nowrap;
-            position: relative;
-        }
-.slide {
-            display: inline-block;
-            width: 100%;
-	    transition: transform 0.5s ease;
-        }
-.completion {
-	text-align: center;
-        margin-top: 50px;
-}
 
 
-  footer {
-    background-color: #333;
+  /*Rodapé*/
+  footer{
+    background-color: black;
     color: #fff;
     text-align: center;
     padding: 20px;
     bottom: 0;
     width: 100%;
+    height: 100%;
     margin-top: 40px;
   }
   
