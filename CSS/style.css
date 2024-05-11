@@ -9,10 +9,14 @@ body {
 
   /*Cabeçalho*/
   header {
-    background: linear-gradient(90deg, #232734 0%, rgba(35,39,52,1) 70%, rgba(255,255,255,1) 100%);
+    background-color: #232734;
     color: #fff;
     padding: 20px;
-    border-radius: 100px;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    position: fixed;
+    width: 97.25%;
+    z-index: 2;
     }
   
   .logo {
@@ -31,6 +35,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 2px;
   }
   
   nav ul {
@@ -71,6 +76,7 @@ body {
   /*ESG*/
   #esg{
     height: 600px;
+    margin-top: 120px;
   }
   
   #esg h1{
@@ -137,12 +143,13 @@ body {
 /*Pilares*/
 
 .pentagon-background {
-  margin-left: 50px;
+  margin-left: 0px;
   width: 350px; /* largura desejada */
   height: 300px; /* altura desejada */
   background-color: #007bff; /* cor de fundo desejada */
   clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
   z-index: -1;
+  
 }
   .pentagon {
     width: 350px; /* Adjust size as needed */
@@ -151,9 +158,10 @@ body {
     margin: auto;
     margin-bottom: auto;
     padding: auto;
+  
   }
   
-  .pentagon a {
+  .pentagon button {
     z-index: 1;
     position: absolute;
     width: 100px; /* Adjust size as needed */
@@ -161,35 +169,54 @@ body {
     transform-origin: 50% 100%;
   }
   
-  .pentagon a:nth-child(1) {
+  .pentagon button:nth-child(1) {
     top: -13%;
-    left: 50%;
+    left: 35%;
   }
   
-  .pentagon a:nth-child(2) {
+  .pentagon button:nth-child(2) {
     top: 30%;
-    left: 114%;
+    left: 100%;
   }
   
-  .pentagon a:nth-child(3) {
+  .pentagon button:nth-child(3) {
     top: 100%;
-    left: 85%;
+    left: 70%;
   }
   
-  .pentagon a:nth-child(4) {
+  .pentagon button:nth-child(4) {
     top: 100%;
-    left: 15%;
+    left: 0%;
     margin-bottom: 20px;
   }
   
-  .pentagon a:nth-child(5) {
+  .pentagon button:nth-child(5) {
     top: 30%;
-    left: -14%;
+    left: -28.5%;
     margin-bottom: 20px;
   }
 
   /*Ranking*/
+  #ranking{
+    text-align: center;
+    margin: 0px 0px 0px 500px;
+  }
 
+  #carousel {
+    width: 500px; /* Ajustar conforme necessário */
+    overflow: hidden;
+    margin-top: 60px;
+  }
+  
+  .session {
+    display: none; /* Inicialmente, esconder todas as sessões */
+    float: left;
+    width: 100%;
+  }
+  
+  .session.active {
+    display: block; /* Mostrar apenas a sessão ativa */
+  }
 
   /*Quiz*/
 
@@ -206,4 +233,3 @@ body {
     height: 100%;
     margin-top: 40px;
   }
-  
