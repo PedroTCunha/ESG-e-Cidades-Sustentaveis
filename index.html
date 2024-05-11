@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ESG e Cidades Sustentáveis</title>
   <link rel="stylesheet" href="CSS/style.css">
+  <link rel="shortcut icon" href="IMG/Logo_APS.jpg" type="image/x-icon">
 </head>
 <body>
 	
@@ -22,7 +23,7 @@
 	<div class="redirect">
 		<ul>
 			<li><a href="#esg"><button>ESG</a></li>
-			<li><a href="#cidades"><button>Cidades Sustentáveis</a></li>
+			<li><a href="#cs"><button>Cidades Sustentáveis</a></li>
 			<li><a href="#es-cidades"><button>ESG x Cidades Sustentáveis</a></li>
 		</ul>
 	</div>
@@ -41,7 +42,7 @@
   <div class="esg-container">
 
     <txt>ESG é uma sigla que representa três critérios usados para avaliar o desempenho de uma empresa em termos de sustentabilidade e responsabilidade social: Ambiental (Environmental), Social e de Governança (Governance). Esses critérios são usados por investidores para avaliar o impacto de uma empresa no mundo e como ela gerencia os aspectos ambientais, sociais e de governança.</txt>
-		<img src="IMG/ESG.jpeg" alt"ESG" width="600px" height="400px">
+		<img src="IMG/ESG.jpeg" alt="ESG" width="600px" height="400px">
 
   </div>
 </section>
@@ -53,7 +54,7 @@
   
   <div class="cs-container">
 
-   		<img src="IMG/CS.jpeg" alt"CS" width="600px" height="400px">
+   		<img src="IMG/CS.jpeg" alt="CS" width="600px" height="400px">
 		<txt>Cidades sustentáveis são aquelas que buscam equilibrar o desenvolvimento econômico, social e ambiental para garantir qualidade de vida para seus habitantes sem comprometer o meio ambiente e as gerações futuras. Isso envolve práticas como eficiência energética, gestão de resíduos, transporte público acessível, espaços verdes, entre outras medidas voltadas para a sustentabilidade.</txt>
  
   </div>
@@ -69,18 +70,30 @@
 
 <section id="pilares">
     <div class="pentagon"> 
-        <a href="link_governanca"><img src="caminho_para_imagem_governanca" alt="Governança"></a>
-        <a href="link_ambiental"><img src="caminho_para_imagem_ambiental" alt="Ambiental"></a>
-        <a href="link_social"><img src="caminho_para_imagem_social" alt="Social"></a>
-        <a href="link_etica"><img src="caminho_para_imagem_etica" alt="Ética"></a>
-        <a href="link_transparencia"><img src="caminho_para_imagem_transparencia" alt="Transparência"></a>
+      <button class="">Prosperidade</button>
+      <button class="">Gestão</button>
+      <button class="">Bem-estar</button>
+      <button class="">Segurança e Infraestrutura</button>
+      <button class="">Serviços Básicos</button>
         <div class="pentagon-background"></div> 
     </div>
 </section>
 
 
 <section id="ranking">
+  <div id="carousel">
+    <div class="session"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae tempora corrupti dolores quas maiores hic, saepe sunt sed mollitia dolore aliquid at esse porro repellendus necessitatibus reiciendis distinctio quasi voluptate? </div>
+    <div class="session"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam maiores ut nemo rerum fugiat eos sit consequuntur molestias ipsam nisi impedit minima, a porro. Illo cupiditate quod temporibus sunt et. </div>
+    <div class="session"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt architecto laborum eveniet magnam iure rerum delectus accusamus quis quidem velit culpa minus ipsa ex expedita sapiente, eligendi veritatis repudiandae nihil? </div>
+    <div class="session"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, est. Omnis fugiat quia dolorum aliquam explicabo minima incidunt repudiandae natus impedit cupiditate, quaerat, vitae autem, aliquid ipsa cumque officiis ipsam. </div>
+    <div class="session"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat tenetur ullam ut ratione eaque ducimus perferendis nam animi vero, sit dolorem dignissimos hic quos? Exercitationem odio eum autem voluptate. Harum. </div>
+    <div class="session"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum pariatur, iure architecto quaerat fuga praesentium! Rem, facilis quis deleniti deserunt laudantium hic dignissimos quae tempora odit temporibus accusamus blanditiis ratione? </div>
+    <div class="session"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor asperiores, ipsum libero nisi expedita quas eum ullam illum eos in illo atque temporibus dolores molestias placeat esse! Ullam, inventore dolores. </div>
+    <button id="prevButton">Anterior</button>
+    <button id="nextButton">Próximo</button>
+  </div>
 </section>
+
 
 <section id="quiz">
 </section>
@@ -91,6 +104,35 @@
   <footer>
     <p>Desenvolvido por Schooby-doo, &copy; 2024</p>
   </footer>
+  <!--JavaScript-->
+  <script>
+  const carousel = document.getElementById("carousel");
+const sessions = carousel.querySelectorAll(".session");
+const nextButton = document.getElementById("nextButton");
+const prevButton = document.getElementById("prevButton");
+let currentSession = 0;
+
+// Função para avançar para a próxima sessão
+function nextSession() {
+  sessions[currentSession].classList.remove("active");
+  currentSession = (currentSession + 1) % sessions.length;
+  sessions[currentSession].classList.add("active");
+}
+
+// Função para voltar para a sessão anterior
+function previousSession() {
+  sessions[currentSession].classList.remove("active");
+  currentSession = (currentSession - 1 + sessions.length) % sessions.length;
+  sessions[currentSession].classList.add("active");
+}
+
+// Mostrar a primeira sessão inicialmente
+sessions[0].classList.add("active");
+
+// Adicionar eventos de clique aos botões
+nextButton.addEventListener("click", nextSession);
+prevButton.addEventListener("click", previousSession);
+  </script>
 </body>
 </html>
 
