@@ -70,7 +70,7 @@
 
 <section id="pilares">
     <div class="pentagon"> 
-      <button class="">Prosperidade</button>
+      <button onclick="openPopup()">Prosperidade</button>
       <button class="">Gestão</button>
       <button class="">Bem-estar</button>
       <button class="">Segurança e Infraestrutura</button>
@@ -142,6 +142,15 @@
   </div>
 </section>
 
+<div id="popup" class="popup">
+    <h2>Minha Janela de Popup</h2>
+    <p>Este é um conteúdo dentro da janela de popup.</p>
+    <button onclick="closePopup()">Fechar</button>
+</div>
+ 
+
+    </div>
+
 <!-- Direitos para o Gif para a class=resposta correta
 <a href="https://pt.vecteezy.com/videos-gratis/anima%C3%A7%C3%A3o-natureza">Animação Natureza Vídeos de arquivo por Vecteezy</a>-->
 
@@ -150,6 +159,18 @@
   </footer>
 	
   <script>
+    //Logica Popup
+function openPopup() {
+var popup = document.getElementById("popup");
+popup.style.display = "block";
+}
+
+function closePopup() {
+var popup = document.getElementById("popup");
+popup.style.display = "none";
+}
+
+
 		//LÓGICA DO RANKING
 const carousel = document.getElementById("carousel");
 const sessions = carousel.querySelectorAll(".session");

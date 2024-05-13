@@ -298,14 +298,27 @@ span {
 
 .resposta:hover::before {
   opacity: 0.5;
-  background-image: url(Errado.gif); /
+  background-image: url(../IMG/Errado.gif); /
 }
 
 .resposta.correta:hover::before {
   opacity: 0.5;
-  background-image: url(Correto.gif); 
+  background-image: url(../IMG/Correto.gif); 
 }
 
+
+    .popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
 
 /*Rodapé*/
 footer{
