@@ -1,3 +1,18 @@
+//Logica Navbar
+const menuToggle = document.querySelector('.menu-toggle');
+const redirect = document.querySelector('.redirect'); 
+
+menuToggle.addEventListener('click', () => {
+  menuToggle.classList.toggle('active');
+  redirect.classList.toggle('active'); 
+});
+
+const header = document.querySelector('header');
+const contentContainer = document.querySelector('.content-container');
+
+const headerHeight = header.offsetHeight; 
+
+contentContainer.style.paddingTop = `${headerHeight}px`;
 
 //LOGICAPOPUP
 const popupContent = {
@@ -116,21 +131,36 @@ window.closePopup = function() {
   document.getElementById("popup").style.display = "none";
 };
 
-//LÓGICA DO RANKING
+// LÓGICA DO RANKING
 const track = document.getElementById("carousel-track");
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
-const slideWidth = 800; // Largura de cada slide
 let currentSlide = 0;
+
+// Obtém a largura do container do carrossel
+const carouselContainer = document.querySelector('.carousel-container'); 
+let slideWidth = carouselContainer.offsetWidth; // Largura inicial
+
+function updateSlideWidth() {
+  // Atualiza a largura do slide se a janela for redimensionada
+  slideWidth = carouselContainer.offsetWidth; 
+  track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+}
+
+// Chama a função inicialmente para definir a largura
+updateSlideWidth();
+
+// Recalcula a largura do slide quando a janela é redimensionada
+window.addEventListener('resize', updateSlideWidth);
 
 prevBtn.addEventListener("click", () => {
   currentSlide = Math.max(currentSlide - 1, 0);
-  track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+  updateSlideWidth();
 });
 
 nextBtn.addEventListener("click", () => {
   currentSlide = Math.min(currentSlide + 1, 6); // Máximo de 6 slides (0-indexado)
-  track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+  updateSlideWidth();
 });
 
 //LÓGICA DO QUIZ
@@ -172,7 +202,7 @@ function verificarResposta(resposta) {
       mostrarSlide(slideAtual);
     }
   } else {
-    alert("Resposta incorreta, tente novamente!");
+    alert("Alguns homens só querem ver o mundo pegando fogo. Tente novamente!");
   }
 }
 
