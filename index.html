@@ -1,357 +1,379 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ESG e Cidades Sustentáveis</title>
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="shortcut icon" href="IMG/Logo_APS.jpg" type="image/x-icon">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESG e Cidades Sustentáveis</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="shortcut icon" href="IMG/Logo_APS.jpg" type="image/x-icon">
+</head>
 
-  <body>
+<body>
 
+  <!--NavBar-->
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="IMG/Logo_APS.jpg">
+        <h1>ESG e Cidades Sustentáveis</h1>
+      </div>
 
-    <!--NavBar-->
+      <div class="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
 
+      <div class="redirect">
+        <ul>
+          <li><a href="#esg">ESG</a></li>
+          <li><a href="#cs">Cidades Sustentáveis</a></li>
+          <li><a href="#es-cidades">ESG x Cidades Sustentáveis</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-    <header>
-      <nav>
-        <div class="logo">
-          <img src="IMG/Logo_APS.jpg">
-          <h1>ESG e Cidades Sustentáveis</h1>
-        </div>
+  <!--Conteúdo-->
+  <div class="content-container">
 
-        <div class="redirect">
-          <ul>
-            <li><a href="#esg"><button>ESG</a></li>
-            <li><a href="#cs"><button>Cidades Sustentáveis</a></li>
-            <li><a href="#es-cidades"><button>ESG x Cidades Sustentáveis</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+    <!--ESG-->
+    <section id="esg">
+      <h1>ESG (Enviromental, Social and Governance)</h1>
 
+      <div class="esg-container">
 
-    <!--Conteúdo-->
-    <div class="content-container">
-
-
-      <!--ESG-->
-      <section id="esg">
-        <h1>ESG (Enviromental, Social and Governance)</h1>
-
-        <div class="esg-container">
-
+        <div class="esg-text">
           <txt>ESG é uma sigla que representa três critérios usados para avaliar o desempenho de uma empresa em termos de
             sustentabilidade e responsabilidade social: Ambiental (Environmental), Social e de Governança (Governance).
             Esses critérios são usados por investidores para avaliar o impacto de uma empresa no mundo e como ela gerencia
             os aspectos ambientais, sociais e de governança.</txt>
-          <img src="IMG/ESG.jpeg" alt="ESG" width="600px" height="400px">
-
         </div>
-      </section>
+        <img src="IMG/ESG.jpeg" alt="ESG">
 
+      </div>
+    </section>
 
-      <!--Cidades Sustentáveis-->
-      <section id="cs">
-        <h1>Cidades Sustentáveis</h1>
+    <!--Cidades Sustentáveis-->
+    <section id="cs">
+      <h1>Cidades Sustentáveis</h1>
 
-        <div class="cs-container">
+      <div class="cs-container">
 
-          <img src="IMG/CS.jpeg" alt="CS" width="600px" height="400px">
+        <img src="IMG/CS.jpeg" alt="CS">
+        <div class="cs-text">
           <txt>Cidades sustentáveis são aquelas que buscam equilibrar o desenvolvimento econômico, social e ambiental para
             garantir qualidade de vida para seus habitantes sem comprometer o meio ambiente e as gerações futuras. Isso
             envolve práticas como eficiência energética, gestão de resíduos, transporte público acessível, espaços verdes,
             entre outras medidas voltadas para a sustentabilidade.</txt>
-
         </div>
 
-      </section>
+      </div>
 
+    </section>
 
-      <!--ESG x Cidades Sustentáveis-->
-      <section id="es-cidades">
-        <h1>ESG x Cidades Sustentáveis</h1>
-        <txt>ESG e cidades sustentáveis estão relacionados porque ambos se concentram em promover práticas ambientais,
-          sociais e de governança responsáveis ​​e sustentáveis. Empresas que adotam princípios ESG geralmente buscam
-          investir em projetos e operações que contribuam para o desenvolvimento de cidades sustentáveis. Da mesma forma,
-          cidades que buscam se tornar mais sustentáveis geralmente adotam diretrizes ESG em suas políticas e
-          regulamentações para promover a transparência, a equidade social e a proteção ambiental.</txt>
-      </section>
+    <!--ESG x Cidades Sustentáveis-->
+    <section id="es-cidades">
+      <h1>ESG x Cidades Sustentáveis</h1>
+      <txt>ESG e cidades sustentáveis estão relacionados porque ambos se concentram em promover práticas ambientais,
+        sociais e de governança responsáveis ​​e sustentáveis. Empresas que adotam princípios ESG geralmente buscam
+        investir em projetos e operações que contribuam para o desenvolvimento de cidades sustentáveis. Da mesma forma,
+        cidades que buscam se tornar mais sustentáveis geralmente adotam diretrizes ESG em suas políticas e
+        regulamentações para promover a transparência, a equidade social e a proteção ambiental.</txt>
+    </section>
 
-      <section id="pilares">
-        <div class="pentagon">
-          <button onmouseover="openPopup('prosperidade')" onmouseout="closePopup()">Prosperidade</button>
-          <button onmouseover="openPopup('gestao')" onmouseout="closePopup()">Gestão</button>
-          <button onmouseover="openPopup('bem-estar')" onmouseout="closePopup()">Bem-estar</button>
-          <button onmouseover="openPopup('seguranca')" onmouseout="closePopup()">Segurança e Infraestrutura</button>
-          <button onmouseover="openPopup('servicos')" onmouseout="closePopup()">Serviços Básicos</button>
-          <div class="pentagon-background"></div>
-        </div>
+    <section id="pilares">
+      <div class="pentagon">
+        <button onmouseover="openPopup('prosperidade')" onmouseout="closePopup()">Prosperidade</button>
+        <button onmouseover="openPopup('gestao')" onmouseout="closePopup()">Gestão</button>
+        <button onmouseover="openPopup('bem-estar')" onmouseout="closePopup()">Bem-estar</button>
+        <button onmouseover="openPopup('seguranca')" onmouseout="closePopup()">Segurança e Infraestrutura</button>
+        <button onmouseover="openPopup('servicos')" onmouseout="closePopup()">Serviços Básicos</button>
+        <div class="pentagon-background"></div>
+      </div>
 
-        <div id="popup" class="popup">
-          <div id="popup-content"></div>
-        </div>
-      </section>
+      <div id="popup" class="popup">
+        <div id="popup-content"></div>
+      </div>
+    </section>
 
+    <!--Ranking-->
+    <section id="ranking">
 
-      <!--Ranking-->
-      <section id="ranking">
+      <h1>Ranking de Cidades Sustentáveis</h1>
 
-        <h1>Ranking de Cidades Sustentáveis</h1>
+      <div class="carousel-container">
+        <div class="carousel-track" id="carousel-track">
+          <div class="carousel-slide">
+            <h3>Ranking do Brasil</h3>
 
-        <div class="carousel-container">
-          <div class="carousel-track" id="carousel-track">
-            <div class="carousel-slide">
-              <h3>Ranking do Brasil</h3>
+            <ol>
 
-              <ol>
+              <li>Sãe Caetano do Sul, São Paulo</li>
+              <li>Jundiaí, São Paulo</li>
+              <li>Valinhos, São Paulo</li>
+              <li>Taguaí, São Paulo</li>
+              <li>Saltinho, São Paulo</li>
+              <li>Vinhedo, São Paulo</li>
+              <li>Cerquilho, São Paulo</li>
+              <li>Sertãozinho, São Paulo</li>
+              <li>Limeira, São Paulo</li>
+              <li>Borá, São Paulo</li>
 
-                <li>Sãe Caetano do Sul, São Paulo</li>
-                <li>Jundiaí, São Paulo</li>
-                <li>Valinhos, São Paulo</li>
-                <li>Taguaí, São Paulo</li>
-                <li>Saltinho, São Paulo</li>
-                <li>Vinhedo, São Paulo</li>
-                <li>Cerquilho, São Paulo</li>
-                <li>Sertãozinho, São Paulo</li>
-                <li>Limeira, São Paulo</li>
-                <li>Borá, São Paulo</li>
+            </ol>
 
-              </ol>
-
-            </div>
-            <div class="carousel-slide">
-              <h3>Ranking da América</h3>
-
-              <ol>
-
-                <li>Curitiba, Paraná, Brasil</li>
-                <li>Vancouver, Colúmbia Britância, Canadá</li>
-                <li>Portland, Oregon, Estados Unidos</li>
-                <li>Medellin, Antioquia, Colômbia</li>
-                <li>Cidade do México, Distrito Federal, México</li>
-                <li>Santiago, Região Metropolitana de Santiago, Chile</li>
-                <li>San José, San José, Costa Rica</li>
-                <li>Quito, Pichincha, Equador</li>
-                <li>Calgary, Alberta, Canadá</li>
-                <li>Nova York, Nova York, Estados Unidos</li>
-
-              </ol>
-
-            </div>
-            <div class="carousel-slide">
-              <h3>Ranking da Europa</h3>
-
-
-              <ol>
-
-                <li>Oslo, Noruega</li>
-                <li>Estocolmo, Suécia</li>
-                <li>Copenhague, Dinamarca</li>
-                <li>Zurique, Suíça</li>
-                <li>Paris, França</li>
-                <li>Amsterdã, Holanda</li>
-                <li>Hamburgo, Alemanha</li>
-                <li>Barcelona, Espanha</li>
-                <li>Londres, Inglaterra</li>
-                <li>Viena, Áustria</li>
-
-              </ol>
-
-            </div>
-            <div class="carousel-slide">
-              <h3>Ranking da África</h3>
-
-
-              <ol>
-
-                <li>Arusha, Tanzânia</li>
-                <li>Casablanca, Marrocos</li>
-                <li>Cidade do Cabo, África do Sul</li>
-                <li>Dar es Salaam, Tanzânia</li>
-                <li>Ebonyi, Nigéria</li>
-                <li>Freetown, Serra Leoa</li>
-                <li>Kigali, Ruanda</li>
-                <li>Lagos, Nigéria</li>
-                <li>Tunis, Tunísia</li>
-                <li>Windhoek, Namíbia</li>
-
-              </ol>
-
-            </div>
-            <div class="carousel-slide">
-              <h3>Ranking da Ásia</h3>
-
-
-              <ol>
-
-                <li>Cingapura, Cingapura</li>
-                <li>Seul, Coreia do Sul</li>
-                <li>Yokohama, Japão</li>
-                <li>Tel Aviv, Israel</li>
-                <li>Shenzhen, China</li>
-                <li>Bangalore, Índia</li>
-                <li>Pusam, Coreia do Sul</li>
-                <li>Iwaki, Japão</li>
-                <li>Almaty, Cazaquistão</li>
-                <li>Dubai, Emirados Árabes Unidos</li>
-
-              </ol>
-
-            </div>
-            <div class="carousel-slide">
-              <h3>Ranking da Oceânia</h3>
-
-
-              <ol>
-
-                <li>Auckland, Nova Zelândia</li>
-                <li>Sydney, Austrália</li>
-                <li>Adelaide, Austrália</li>
-                <li>Wellington, Nova Zelândia</li>
-                <li>Brisbane, Austrália</li>
-                <li>Perth, Austrália</li>
-                <li>Gold Coast, Austrália</li>
-                <li>Canberra, Austrália</li>
-                <li>Melbourne, Austrália</li>
-                <li>Hobart, Austrália</li>
-
-              </ol>
-
-            </div>
-            <div class="carousel-slide">
-              <h3>Ranking Mundial</h3>
-
-
-              <ol>
-
-                <li>Oslo, Noruega</li>
-                <li>Estocolmo, Suécia</li>
-                <li>Copenhague, Dinamarca</li>
-                <li>Zurique, Suíça</li>
-                <li>Amsterdã, Holanda</li>
-                <li>Vancouver, Canadá</li>
-                <li>Portland, Estados Unidos</li>
-                <li>São Francisco, Estados Unidos</li>
-                <li>Seattle, Estados Unidos</li>
-                <li>Cidade do México, México</li>
-
-              </ol>
-
-            </div>
           </div>
-          <div class="carousel-nav">
-            <button id="prevBtn">Anterior</button>
-            <button id="nextBtn">Próximo</button>
+          <div class="carousel-slide">
+            <h3>Ranking da América</h3>
+
+            <ol>
+
+              <li>Curitiba, Brasil</li>
+              <li>Vancouver, Canadá</li>
+              <li>Portland, Estados Unidos</li>
+              <li>Medellin, Colômbia</li>
+              <li>Cidade do México, México</li>
+              <li>Santiago, Chile</li>
+              <li>San José, Costa Rica</li>
+              <li>Quito, Equador</li>
+              <li>Calgary, Canadá</li>
+              <li>Nova York, Estados Unidos</li>
+
+            </ol>
+
+          </div>
+          <div class="carousel-slide">
+            <h3>Ranking da Europa</h3>
+
+            <ol>
+
+              <li>Oslo, Noruega</li>
+              <li>Estocolmo, Suécia</li>
+              <li>Copenhague, Dinamarca</li>
+              <li>Zurique, Suíça</li>
+              <li>Paris, França</li>
+              <li>Amsterdã, Holanda</li>
+              <li>Hamburgo, Alemanha</li>
+              <li>Barcelona, Espanha</li>
+              <li>Londres, Inglaterra</li>
+              <li>Viena, Áustria</li>
+
+            </ol>
+
+          </div>
+          <div class="carousel-slide">
+            <h3>Ranking da África</h3>
+
+            <ol>
+
+              <li>Arusha, Tanzânia</li>
+              <li>Casablanca, Marrocos</li>
+              <li>Cidade do Cabo, África do Sul</li>
+              <li>Dar es Salaam, Tanzânia</li>
+              <li>Ebonyi, Nigéria</li>
+              <li>Freetown, Serra Leoa</li>
+              <li>Kigali, Ruanda</li>
+              <li>Lagos, Nigéria</li>
+              <li>Tunis, Tunísia</li>
+              <li>Windhoek, Namíbia</li>
+
+            </ol>
+
+          </div>
+          <div class="carousel-slide">
+            <h3>Ranking da Ásia</h3>
+
+            <ol>
+
+              <li>Cingapura, Cingapura</li>
+              <li>Seul, Coreia do Sul</li>
+              <li>Yokohama, Japão</li>
+              <li>Tel Aviv, Israel</li>
+              <li>Shenzhen, China</li>
+              <li>Bangalore, Índia</li>
+              <li>Pusam, Coreia do Sul</li>
+              <li>Iwaki, Japão</li>
+              <li>Almaty, Cazaquistão</li>
+              <li>Dubai, Emirados Árabes Unidos</li>
+
+            </ol>
+
+          </div>
+          <div class="carousel-slide">
+            <h3>Ranking da Oceânia</h3>
+
+            <ol>
+
+              <li>Auckland, Nova Zelândia</li>
+              <li>Sydney, Austrália</li>
+              <li>Adelaide, Austrália</li>
+              <li>Wellington, Nova Zelândia</li>
+              <li>Brisbane, Austrália</li>
+              <li>Perth, Austrália</li>
+              <li>Gold Coast, Austrália</li>
+              <li>Canberra, Austrália</li>
+              <li>Melbourne, Austrália</li>
+              <li>Hobart, Austrália</li>
+
+            </ol>
+
+          </div>
+          <div class="carousel-slide">
+            <h3>Ranking Mundial</h3>
+
+            <ol>
+
+              <li>Oslo, Noruega</li>
+              <li>Estocolmo, Suécia</li>
+              <li>Copenhague, Dinamarca</li>
+              <li>Zurique, Suíça</li>
+              <li>Amsterdã, Holanda</li>
+              <li>Vancouver, Canadá</li>
+              <li>Portland, Estados Unidos</li>
+              <li>São Francisco, Estados Unidos</li>
+              <li>Seattle, Estados Unidos</li>
+              <li>Cidade do México, México</li>
+
+            </ol>
+
           </div>
         </div>
+        <div class="carousel-nav">
+          <button id="prevBtn">Anterior</button>
+          <button id="nextBtn">Próximo</button>
+        </div>
+      </div>
 
-      </section>
+    </section>
 
-      <!--Quiz-->
-      <section id="quiz">
+    <!--Quiz-->
+    <section id="quiz">
 
-        <h1>QUIZ</h1>
+      <h1>QUIZ</h1>
 
-        <div class="questionario-container">
-          <div class="carrossel">
+      <div class="questionario-container">
+        <div class="carrossel">
 
-            <div class="slide active">
+          <div class="slide active">
 
-              <h2>Prosperidade</h2>
+            <h2>Prosperidade</h2>
 
-              <p>Qual pilar é fundamental para garantir que uma cidade seja verdadeiramente próspera, oferecendo oportunidades para todos e um futuro sustentável?</p>
+            <p>Qual pilar é fundamental para garantir que uma cidade seja verdadeiramente próspera, oferecendo oportunidades
+              para todos e um futuro sustentável?</p>
 
-              <div class="respostas">
-                <span class="resposta correta"
-                  data-resposta="correta">Uma cidade que se preocupa com o meio ambiente e investe em práticas ecológicas garante um futuro mais verde e saudável para seus habitantes, além de atrair investimentos e promover o desenvolvimento econômico.</span>
-                <span class="resposta"
-                  data-resposta="incorreta"> A presença de grandes empresas pode gerar empregos, porém não assegura a prosperidade de forma abrangente. O foco deve estar no desenvolvimento local e na geração de oportunidades para todos.</span>
-                <span class="resposta"
-                  data-resposta="incorreta">Uma alta densidade populacional pode indicar dinamismo, mas não é garantia de prosperidade. É preciso que essa população tenha acesso a serviços públicos de qualidade e oportunidades para ter uma vida digna.</span>
-              </div>
+            <div class="respostas">
+              <span class="resposta correta"
+                data-resposta="correta">Uma cidade que se preocupa com o meio ambiente e investe em práticas ecológicas garante
+                um futuro mais verde e saudável para seus habitantes, além de atrair investimentos e promover o
+                desenvolvimento econômico.</span>
+              <span class="resposta"
+                data-resposta="incorreta"> A presença de grandes empresas pode gerar empregos, porém não assegura a
+                prosperidade de forma abrangente. O foco deve estar no desenvolvimento local e na geração de oportunidades
+                para todos.</span>
+              <span class="resposta"
+                data-resposta="incorreta">Uma alta densidade populacional pode indicar dinamismo, mas não é garantia de
+                prosperidade. É preciso que essa população tenha acesso a serviços públicos de qualidade e oportunidades
+                para ter uma vida digna.</span>
             </div>
+          </div>
 
-            <div class="slide offscreen">
-              <h2>Gestão</h2>
+          <div class="slide offscreen">
+            <h2>Gestão</h2>
 
-              <p>Em uma cidade que busca o desenvolvimento sustentável, qual elemento é crucial para garantir que as decisões sejam tomadas de forma democrática e eficaz, levando em conta o bem-estar de todos?</p>
+            <p>Em uma cidade que busca o desenvolvimento sustentável, qual elemento é crucial para garantir que as
+              decisões sejam tomadas de forma democrática e eficaz, levando em conta o bem-estar de todos?</p>
 
-              <div class="respostas">
-                <span class="resposta"
-                  data-resposta="incorreta">A construção de novos edifícios deve ser planejada de forma sustentável, considerando o impacto ambiental, a eficiência energética e a otimização do uso do espaço urbano.</span>
-                <span class="resposta"
-                  data-resposta="incorreta">A tecnologia é uma ferramenta importante para a gestão sustentável, mas não é o pilar central. O foco deve estar em um planejamento estratégico que leve em conta as necessidades da cidade e seus habitantes.</span>
-                <span class="resposta correta"
-                  data-resposta="correta">A participação de diferentes setores da sociedade na construção de um plano de longo prazo para a cidade é fundamental para garantir que as necessidades e os anseios de todos sejam considerados.</span>
-              </div>
+            <div class="respostas">
+              <span class="resposta"
+                data-resposta="incorreta">A construção de novos edifícios deve ser planejada de forma sustentável,
+                considerando o impacto ambiental, a eficiência energética e a otimização do uso do espaço urbano.</span>
+              <span class="resposta"
+                data-resposta="incorreta">A tecnologia é uma ferramenta importante para a gestão sustentável, mas não é o
+                pilar central. O foco deve estar em um planejamento estratégico que leve em conta as necessidades da cidade e
+                seus habitantes.</span>
+              <span class="resposta correta"
+                data-resposta="correta">A participação de diferentes setores da sociedade na construção de um plano de longo
+                prazo para a cidade é fundamental para garantir que as necessidades e os anseios de todos sejam
+                considerados.</span>
             </div>
+          </div>
 
-            <div class="slide offscreen">
+          <div class="slide offscreen">
 
-              <h2>Bem Estar</h2>
+            <h2>Bem Estar</h2>
 
-              <p>Em uma cidade que busca o bem-estar de seus habitantes, defina o fator que seja fundamental para garantir uma vida mais saudável e digna para todos?</p>
+            <p>Em uma cidade que busca o bem-estar de seus habitantes, defina o fator que seja fundamental para garantir
+              uma vida mais saudável e digna para todos?</p>
 
-              <div class="respostas">
-                <span class="resposta"
-                  data-resposta="incorreta">A presença de shoppings pode contribuir para a economia da cidade, mas não é o principal elemento para o bem-estar da população. O foco deve estar em serviços essenciais como saúde, educação e moradia digna.</span>
-                <span class="resposta correta"
-                  data-resposta="correta">Um sistema de saúde universal e de qualidade é essencial para garantir o bem-estar da população, promovendo a saúde preventiva e o acesso a cuidados especializados.</span>
-                <span class="resposta"
-                  data-resposta="incorreta">A construção de moradias de alto padrão beneficia uma parcela da população, mas não garante o bem-estar para todos. É preciso investir em políticas habitacionais que garantam moradia digna para todos.</span>
-              </div>
+            <div class="respostas">
+              <span class="resposta"
+                data-resposta="incorreta">A presença de shoppings pode contribuir para a economia da cidade, mas não é o
+                principal elemento para o bem-estar da população. O foco deve estar em serviços essenciais como saúde,
+                educação e moradia digna.</span>
+              <span class="resposta correta"
+                data-resposta="correta">Um sistema de saúde universal e de qualidade é essencial para garantir o bem-estar
+                da população, promovendo a saúde preventiva e o acesso a cuidados especializados.</span>
+              <span class="resposta"
+                data-resposta="incorreta">A construção de moradias de alto padrão beneficia uma parcela da população, mas não
+                garante o bem-estar para todos. É preciso investir em políticas habitacionais que garantam moradia digna para
+                todos.</span>
             </div>
+          </div>
 
-            <div class="slide fora">
+          <div class="slide fora">
 
-              <h2>Segurança e Infraestrutura</h2>
+            <h2>Segurança e Infraestrutura</h2>
 
-              <p>Para construir uma cidade segura e resiliente, quais pontos são de extrema importância para garantir a proteção da população e a prevenção de crimes e acidentes?</p>
+            <p>Para construir uma cidade segura e resiliente, quais pontos são de extrema importância para garantir a
+              proteção da população e a prevenção de crimes e acidentes?</p>
 
-              <div class="respostas">
-                <span class="resposta correta"
-                  data-resposta="correta">Investir em segurança pública, monitoramento inteligente, iluminação adequada e design urbano que desestimula a criminalidade é fundamental para garantir um ambiente seguro para todos.</span>
-                <span class="resposta"
-                  data-resposta="incorreta">A oferta de lazer pode ser um atrativo para a cidade, mas não garante a segurança da população. O foco deve estar na prevenção de crimes e na proteção dos bens públicos e privados.</span>
-                <span class="resposta"
-              </div>
+            <div class="respostas">
+              <span class="resposta correta"
+                data-resposta="correta">Investir em segurança pública, monitoramento inteligente, iluminação adequada e
+                design urbano que desestimula a criminalidade é fundamental para garantir um ambiente seguro para
+                todos.</span>
+              <span class="resposta"
+                data-resposta="incorreta">A oferta de lazer pode ser um atrativo para a cidade, mas não garante a segurança
+                da população. O foco deve estar na prevenção de crimes e na proteção dos bens públicos e privados.</span>
+              <span class="resposta"
+                data-resposta="incorreta">A presença de câmeras de segurança pode auxiliar na identificação de crimes, mas
+                não resolve a raiz do problema. É preciso investir em ações preventivas e em políticas públicas que
+                combatam as causas da violência e da criminalidade.</span>
             </div>
+          </div>
 
-            <div class="slide offscreen">
+          <div class="slide offscreen">
 
-              <h2>Serviços Básicos</h2>
+            <h2>Serviços Básicos</h2>
 
-              <p>Em uma cidade que busca garantir o acesso universal a serviços de qualidade, qual elemento é fundamental para assegurar o bem-estar da população e a sustentabilidade dos recursos naturais?</p>
+            <p>Em uma cidade que busca garantir o acesso universal a serviços de qualidade, qual elemento é fundamental
+              para assegurar o bem-estar da população e a sustentabilidade dos recursos naturais?</p>
 
-              <div class="respostas">
-                <span class="resposta"
-                  data-resposta="incorreta">A presença de restaurantes de luxo pode contribuir para a economia, porém não garante o acesso a serviços básicos essenciais como água, energia e educação.</span>
-                <span class="resposta correta"
-                  data-resposta="correta">Uma rede de distribuição de água potável eficiente garante o acesso universal à água de qualidade, minimizando perdas e contribuindo para a gestão sustentável dos recursos hídricos.</span>
-                <span class="resposta"
-                  data-resposta="incorreta">A construção de um estádio pode ser um investimento importante, mas não assegura o acesso universal a serviços essenciais como água, energia, saneamento básico e educação.</span>
-              </div>
+            <div class="respostas">
+              <span class="resposta"
+                data-resposta="incorreta">A presença de restaurantes de luxo pode contribuir para a economia, porém não
+                garante o acesso a serviços básicos essenciais como água, energia e educação.</span>
+              <span class="resposta correta"
+                data-resposta="correta">Uma rede de distribuição de água potável eficiente garante o acesso universal à
+                água de qualidade, minimizando perdas e contribuindo para a gestão sustentável dos recursos hídricos.
+              </span>
+              <span class="resposta"
+                data-resposta="incorreta">A construção de um estádio pode ser um investimento importante, mas não assegura o
+                acesso universal a serviços essenciais como água, energia, saneamento básico e educação.</span>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
+  </div>
 
+  <footer>
+    <p>Desenvolvido por Schooby-doo, © 2024</p>
+  </footer>
 
-
-    </div>
-
-    <!-- Direitos para o Gif para a class=resposta correta
-<a href="https://pt.vecteezy.com/videos-gratis/anima%C3%A7%C3%A3o-natureza">Animação Natureza Vídeos de arquivo por Vecteezy</a>-->
-
-    <footer>
-      <p>Desenvolvido por Schooby-doo, &copy; 2024</p>
-    </footer>
-
-    <script src="JS/script.js"></script>
-  </body>
+  <script src="JS/script.js"></script>
+</body>
 
 </html>

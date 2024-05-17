@@ -1,5 +1,7 @@
+/* Estilos gerais */
 * {
   font-family: open;
+  box-sizing: border-box;
 }
 
 body {
@@ -8,18 +10,20 @@ body {
   background-color: lightblue;
 }
 
-
-
-/*Cabeçalho*/
+/* Cabeçalho */
 header {
   background-color: #232734;
   color: #fff;
   padding: 20px;
   border-bottom-left-radius: 70px;
   border-bottom-right-radius: 70px;
-  width: calc(100% - 40px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 2;
 }
+
 
 .logo {
   margin-left: 10px;
@@ -47,11 +51,11 @@ nav ul {
 }
 
 nav ul li {
-  display: inline;
+  display: inline-block; /* Exibe os botões lado a lado */
   margin-right: 20px;
 }
 
-nav ul li button {
+nav ul li a {
   border: 2px solid black;
   outline: none;
   padding: 10px 20px;
@@ -59,123 +63,168 @@ nav ul li button {
   background-color: #fff;
   color: #232734;
   cursor: pointer;
-}
-
-nav ul li a {
   text-decoration: none;
-  color: #232734;
 }
 
+/* Menu Toggle */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+}
 
+.bar {
+  display: block;
+  width: 25px;
+  height: 4px;
+  margin: 5px auto;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+/* Estilos para o menu toggle quando ativo */
+.menu-toggle.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Conteúdo */
 .content-container {
-  width: 1500px;
-  height: 100%;
   padding: 20px;
-  margin: auto;
+  max-width: 1500px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.6;
+  z-index: 1;
 }
 
-
-/*ESG*/
+/* ESG */
 #esg {
   height: 600px;
+  padding-top: 90px;
 }
 
 #esg h1 {
-  font-size: 40px;
+  font-size: 32px;
+  margin-bottom: 20px;
 }
 
 #esg .esg-container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #esg img {
   background-size: cover;
-  float: right;
-  margin-left: 110px;
+  width: 45%;
+  height: auto;
 }
 
-#esg txt {
+#esg .esg-text {
   text-align: left;
   line-height: 32px;
   align-content: center;
   width: 50%;
-  font-size: 20px;
+  font-size: 18px;
 }
 
-
-/*CS*/
+/* CS */
 #cs {
   height: 600px;
-}
-
-#cs .cs-container {
-  display: flex;
+  padding-top: 90px;
 }
 
 #cs h1 {
   text-align: right;
-  font-size: 40px;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+
+#cs .cs-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #cs img {
-  float: left;
-  margin-right: 110px;
+  background-size: cover;
+  width: 45%;
+  height: auto;
 }
 
-#cs txt {
+#cs .cs-text {
   text-align: left;
   line-height: 32px;
-  font-size: 20px;
   align-content: center;
+  width: 50%;
+  font-size: 18px;
 }
 
-
-/*Es-cidades*/
+/* Es-cidades */
 #es-cidades {
   height: 300px;
+  padding-top: 90px;
 }
 
 #es-cidades h1 {
+  font-size: 32px;
   text-align: center;
-  font-size: 40px;
+  margin-bottom: 20px;
 }
 
 #es-cidades txt {
   text-align: left;
   align-content: center;
-  font-size: 20px;
-  width: 90%;
+  font-size: 18px;
+  width: 100%;
   line-height: 32px;
 }
 
-/*Pilares*/
+/* Pilares */
+#pilares {
+  height: 300px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 
 .pentagon-background {
-  margin-left: 0px;
-  width: 350px;
-  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 250px;
   background-color: #007bff;
   clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
   z-index: -1;
-
+  margin-bottom: 20px;
 }
 
 .pentagon {
-  width: 350px;
-  height: 300px;
+  width: 300px;
+  height: 250px;
   position: relative;
   margin: auto;
   margin-bottom: auto;
   padding: auto;
-
+  margin-bottom: 20px;
 }
 
 .pentagon button {
   z-index: 1;
   position: absolute;
-  width: 100px;
-  height: 40px;
+  width: 85px;
+  height: 35px;
   transform-origin: 50% 100%;
+  font-size: 14px;
 }
 
 .pentagon button:nth-child(1) {
@@ -216,29 +265,32 @@ nav ul li a {
   border: 1px solid #ccc;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   z-index: 1000;
+  width: 90%;
+  max-width: 500px;
 }
 
-/*Ranking*/
+/* Ranking */
 #ranking {
   text-align: center;
+  margin-bottom: 40px;
 }
 
 #ranking h1 {
+  font-size: 32px;
   text-align: center;
   align-self: center;
-  margin-top: 100px;
-  /* Ajuste conforme necessário */
-  font-size: 40px;
+  margin-top: 20px;
+  font-size: 32px;
 }
 
 .carousel-container {
   position: relative;
-  width: 800px;
-  height: 700px;
+  width: 100%;
+  max-width: 800px;
+  height: 600px;
   align-content: center;
   overflow: hidden;
   margin: 0 auto;
-  /* Centralizar o carrossel */
 }
 
 .carousel-track {
@@ -248,22 +300,20 @@ nav ul li a {
 
 .carousel-slide {
   flex: 0 0 100%;
-  height: 700px;
+  height: 600px;
   display: flex;
   flex-direction: column;
-  /* Organizar o conteúdo em coluna */
   justify-content: flex-start;
-  /* Alinhar o conteúdo no topo */
   align-items: center;
-  font-size: 2em;
+  font-size: 25px;
   color: white;
   text-align: left;
-  line-height: 45px;
+  line-height: 30px;
 }
 
 .carousel-slide h3 {
-  margin-bottom: 20px;
-  /* Espaçamento entre título e lista */
+  font-size: 35px;
+  margin-bottom: 10px;
 }
 
 .carousel-slide:nth-child(1) {
@@ -305,7 +355,7 @@ nav ul li a {
 .carousel-slide:nth-child(7) {
   background: no-repeat;
   background-image: url(../IMG/mundial.jpg);
-  background-size: 800px 700px;
+  background-size: cover;
 }
 
 .carousel-nav {
@@ -326,15 +376,13 @@ nav ul li a {
   cursor: pointer;
 }
 
-/*Quiz*/
-
-
+/* Quiz */
 #quiz {
   margin-bottom: 100px;
 }
 
 #quiz h1 {
-  font-size: 40px;
+  font-size: 32px;
   text-align: center;
 }
 
@@ -342,7 +390,7 @@ nav ul li a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 50%;
+  width: 100%;
   margin: 50px auto;
   font-family: sans-serif;
 }
@@ -358,7 +406,6 @@ nav ul li a {
   align-items: center;
   width: 100%;
   transition: transform 0.5s ease-in-out;
-  /* Ocultar todas as slides inicialmente */
   display: none;
 }
 
@@ -366,9 +413,9 @@ nav ul li a {
   display: flex;
 }
 
-.slide>div {
+.slide > div {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
   width: 100%;
@@ -383,6 +430,7 @@ nav ul li a {
   position: relative;
   overflow: hidden;
   transition: background-color 0.3s ease;
+  width: 100%;
 }
 
 .resposta::before {
@@ -407,16 +455,92 @@ nav ul li a {
   background-image: url(../IMG/Correto.gif);
 }
 
-
-/*Rodapé*/
+/* Rodapé */
 footer {
   background-color: black;
   color: #fff;
   text-align: center;
   padding: 20px;
   bottom: 0;
-  width: calc(100% - 40px);
+  width: 100%;
   height: 100%;
+  border-top-left-radius: 70px;
+  border-top-right-radius: 70px;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .content-container {
+    padding: 10px;
+  }
+
+  nav ul {
+    display: none; /* Oculta o menu em telas menores */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #232734;
+  }
+
+  nav ul li {
+    display: block; /* Cada item do menu fica em uma linha */
+    margin: 20px 0; /* Espaçamento entre itens do menu */
+    text-align: center;
+  }
+
+  .menu-toggle {
+    display: block; /* Exibe o botão do menu toggle */
+  }
+
+  #pilares {
+    margin-top: 300px;
+  }
+
+  .pentagon-background {
+    width: 250px;
+    height: 200px;
+  }
+
+  .pentagon {
+    width: 250px;
+    height: 200px;
+  }
+
+  .pentagon button {
+    width: 60px;
+    height: 20px;
+    font-size: 12px;
+  }
+
+  .carousel-container {
+    height: 450px;
+  }
+
+  .carousel-slide {
+    height: 450px;
+  }
+
+  #esg .esg-container,
+  #cs .cs-container {
+    flex-direction: column;
+  }
+
+  #esg img,
+  #cs img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #esg .esg-text,
+  #cs .cs-text {
+    width: 100%;
+  }
+}
+
+/* Estilos para o menu quando ativo (tela pequena) */
+.redirect.active ul {
+  display: block;
 }
