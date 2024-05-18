@@ -131,6 +131,27 @@ window.closePopup = function() {
   document.getElementById("popup").style.display = "none";
 };
 
+const buttons = document.querySelectorAll('.pentagon button');
+buttons.forEach(button => {
+  button.addEventListener('touchstart', function(){
+    if (window.innerWidth <= 768) {
+      const contentId = button.id.replace('btn-','');
+      openPopup(contentId);
+    }
+  })
+});
+
+const btnVoltar = document.querySelectorAll('btn-voltar');
+buttons.forEach(button => {
+  button.addEventListener('touchstart', function(){
+    if(window.innerWidth <= 768){
+      const contentId = button.id.replace('btn-','');
+      openPopup(contentId);
+      btnVoltar.style.display = 'block';
+    }
+  })
+});
+
 // LÓGICA DO RANKING
 const track = document.getElementById("carousel-track");
 const prevBtn = document.getElementById("prevBtn");
@@ -202,7 +223,7 @@ function verificarResposta(resposta) {
       mostrarSlide(slideAtual);
     }
   } else {
-    alert("Alguns homens só querem ver o mundo pegando fogo. Tente novamente!");
+    alert("Alternativa incorreta, tente novamente!");
   }
 }
 

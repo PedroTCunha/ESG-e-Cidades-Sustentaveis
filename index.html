@@ -85,15 +85,17 @@
 
     <section id="pilares">
       <div class="pentagon">
-        <button onmouseover="openPopup('prosperidade')" onmouseout="closePopup()">Prosperidade</button>
-        <button onmouseover="openPopup('gestao')" onmouseout="closePopup()">Gestão</button>
-        <button onmouseover="openPopup('bem-estar')" onmouseout="closePopup()">Bem-estar</button>
-        <button onmouseover="openPopup('seguranca')" onmouseout="closePopup()">Segurança e Infraestrutura</button>
-        <button onmouseover="openPopup('servicos')" onmouseout="closePopup()">Serviços Básicos</button>
+        <button id="btn-prosperidade" onmouseover="openPopup('prosperidade')" onmouseout="closePopup()">Prosperidade</button>
+        <button id="btn-gestao" onmouseover="openPopup('gestao')" onmouseout="closePopup()">Gestão</button>
+        <button id="btn-bem-estar" onmouseover="openPopup('bem-estar')" onmouseout="closePopup()">Bem-estar</button>
+        <button id="btn-seguranca" onmouseover="openPopup('seguranca')" onmouseout="closePopup()">Segurança e Infraestrutura</button>
+        <button id="btn-servicos" onmouseover="openPopup('servicos')" onmouseout="closePopup()">Serviços Básicos</button>
         <div class="pentagon-background"></div>
       </div>
 
       <div id="popup" class="popup">
+        <div id="popup-content"></div>
+        <button id="btn-voltar">Voltar</button>
         <div id="popup-content"></div>
       </div>
     </section>
