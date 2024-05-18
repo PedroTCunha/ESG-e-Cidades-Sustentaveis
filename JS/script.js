@@ -223,7 +223,7 @@ function verificarResposta(resposta) {
       mostrarSlide(slideAtual);
     }
   } else {
-    alert("Alguns homens só querem ver o mundo pegando fogo. Tente novamente!");
+    alert("Alternativa incorreta, tente novamente!");
   }
 }
 
