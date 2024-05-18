@@ -197,7 +197,7 @@ nav ul li a {
   margin-bottom: 50px;
 }
 
-.pentagon-background {
+.pentagono-background {
   margin-left: auto;
   margin-right: auto;
   width: 300px;
@@ -208,7 +208,7 @@ nav ul li a {
   margin-bottom: 20px;
 }
 
-.pentagon {
+.pentagono {
   width: 300px;
   height: 250px;
   position: relative;
@@ -218,37 +218,38 @@ nav ul li a {
   margin-bottom: 20px;
 }
 
-.pentagon button {
+.pentagono button {
   z-index: 1;
   position: absolute;
   width: 85px;
   height: 35px;
   transform-origin: 50% 100%;
-  font-size: 14px;
+  font-size: 12px;
+  text-align: center;
 }
 
-.pentagon button:nth-child(1) {
+.pentagono button:nth-child(1) {
   top: -13%;
   left: 35%;
 }
 
-.pentagon button:nth-child(2) {
+.pentagono button:nth-child(2) {
   top: 30%;
   left: 100%;
 }
 
-.pentagon button:nth-child(3) {
+.pentagono button:nth-child(3) {
   top: 100%;
   left: 70%;
 }
 
-.pentagon button:nth-child(4) {
+.pentagono button:nth-child(4) {
   top: 100%;
   left: 0%;
   margin-bottom: 20px;
 }
 
-.pentagon button:nth-child(5) {
+.pentagono button:nth-child(5) {
   top: 30%;
   left: -28.5%;
   margin-bottom: 20px;
@@ -390,7 +391,7 @@ nav ul li a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 100%;
+  width: 65%;
   margin: 50px auto;
   font-family: sans-serif;
 }
@@ -422,15 +423,16 @@ nav ul li a {
 }
 
 .resposta {
-  padding: 10px 20px;
-  margin: 10px;
+  padding: 20px 30px;
+  margin: 15px;
   cursor: pointer;
+  align-self: center;
   border: 1px solid #ccc;
   border-radius: 5px;
   position: relative;
   overflow: hidden;
-  transition: background-color 0.3s ease;
-  width: 100%;
+  transition: background-color 0.5s ease;
+  width: 30%;
 }
 
 .resposta::before {
@@ -474,6 +476,7 @@ footer {
 @media (max-width: 768px) {
   .content-container {
     padding: 10px;
+    font-size: 12px;
   }
 
   nav ul {
@@ -499,17 +502,17 @@ footer {
     margin-top: 300px;
   }
 
-  .pentagon-background {
+  .pentagono-background {
     width: 250px;
     height: 200px;
   }
 
-  .pentagon {
+  .pentagono {
     width: 250px;
     height: 200px;
   }
 
-  .pentagon button {
+  .pentagono button {
     width: 60px;
     height: 20px;
     font-size: 10px;
@@ -543,6 +546,15 @@ footer {
   #esg .esg-text,
   #cs .cs-text {
     width: 100%;
+  }
+
+  .questionario-container{
+    width: 100%;
+  }
+
+  .resposta{
+    width: 90%;
+    align-content: center;
   }
 }
 
