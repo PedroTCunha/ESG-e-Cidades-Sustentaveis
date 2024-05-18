@@ -198,7 +198,7 @@ function verificarResposta(resposta) {
   if (resposta === "correta") {
     slideAtual++;
     if (slideAtual >= slides.length) {
-      if (confirm("🌹🌸Teste Concluído!🌸🌹 \n\n Clique em Ok para reiniciar")) {
+      if (confirm("Teste Concluído! \n\n Clique em Ok para reiniciar")) {
         slideAtual = 0;
         slides.forEach(slide => {
           const respostas = slide.querySelectorAll(".resposta");
