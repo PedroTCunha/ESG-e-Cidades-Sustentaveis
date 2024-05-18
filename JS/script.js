@@ -127,11 +127,12 @@ window.openPopup = function(contentId) {
   popup.style.display = "block";
 };
 
-window.closePopup = function() {
-  document.getElementById("popup").style.display = "none";
-};
+function closePopup() {
+  var popup = document.getElementById("popup");
+  popup.style.display = "none";
+  }
 
-const buttons = document.querySelectorAll('.pentagon button');
+const buttons = document.querySelectorAll('.pentagono button');
 buttons.forEach(button => {
   button.addEventListener('touchstart', function(){
     if (window.innerWidth <= 768) {
@@ -141,16 +142,6 @@ buttons.forEach(button => {
   })
 });
 
-const btnVoltar = document.querySelectorAll('btn-voltar');
-buttons.forEach(button => {
-  button.addEventListener('touchstart', function(){
-    if(window.innerWidth <= 768){
-      const contentId = button.id.replace('btn-','');
-      openPopup(contentId);
-      btnVoltar.style.display = 'block';
-    }
-  })
-});
 
 // LÓGICA DO RANKING
 const track = document.getElementById("carousel-track");
@@ -207,7 +198,7 @@ function verificarResposta(resposta) {
   if (resposta === "correta") {
     slideAtual++;
     if (slideAtual >= slides.length) {
-      if (confirm("Teste Concluído! Deseja reiniciar o quiz?")) {
+      if (confirm("🌹🌸Teste Concluído!🌸🌹 \n\n Clique em Ok para reiniciar")) {
         slideAtual = 0;
         slides.forEach(slide => {
           const respostas = slide.querySelectorAll(".resposta");
@@ -223,7 +214,7 @@ function verificarResposta(resposta) {
       mostrarSlide(slideAtual);
     }
   } else {
-    alert("Alternativa incorreta, tente novamente!");
+    alert("🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥\n🔥  Alternativa incorreta  🔥\n🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥");
   }
 }
 
