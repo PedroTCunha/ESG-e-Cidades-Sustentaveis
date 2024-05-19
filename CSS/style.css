@@ -403,7 +403,7 @@ nav ul li a {
 
 .slide {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   width: 100%;
   transition: transform 0.5s ease-in-out;
@@ -422,6 +422,14 @@ nav ul li a {
   width: 100%;
 }
 
+.respostas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  justify-content: center;
+  width: 100%;
+}
+
 .resposta {
   padding: 20px 30px;
   margin: 15px;
@@ -433,6 +441,10 @@ nav ul li a {
   overflow: hidden;
   transition: background-color 0.5s ease;
   width: 30%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .resposta::before {
@@ -554,8 +566,10 @@ footer {
 
   .resposta{
     width: 90%;
+    height: 70%;
     align-content: center;
   }
+}
 }
 
 /* Estilos para o menu quando ativo (tela pequena) */
