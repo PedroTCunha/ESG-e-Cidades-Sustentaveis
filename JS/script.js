@@ -182,7 +182,16 @@ let slideAtual = 0;
 
 function mostrarSlide(n) {
   slides.forEach((slide, index) => {
-    slide.classList.toggle("active", index === n);
+    if (index === n) {
+      slide.classList.add("active");
+      slide.classList.remove("previous", "next");
+    } else if (index < n) {
+      slide.classList.remove("active", "next");
+      slide.classList.add("previous");
+    } else {
+      slide.classList.remove("active", "previous");
+      slide.classList.add("next");
+    }
   });
 }
 
