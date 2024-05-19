@@ -45,9 +45,11 @@
       <div class="esg-container">
 
         <div class="esg-text">
-          <txt>ESG é uma sigla que representa três critérios usados para avaliar o desempenho de uma empresa em termos de
+          <txt>ESG é uma sigla que representa três critérios usados para avaliar o desempenho de uma empresa em termos
+            de
             sustentabilidade e responsabilidade social: Ambiental (Environmental), Social e de Governança (Governance).
-            Esses critérios são usados por investidores para avaliar o impacto de uma empresa no mundo e como ela gerencia
+            Esses critérios são usados por investidores para avaliar o impacto de uma empresa no mundo e como ela
+            gerencia
             os aspectos ambientais, sociais e de governança.</txt>
         </div>
         <img src="IMG/ESG.jpeg" alt="ESG">
@@ -63,9 +65,11 @@
 
         <img src="IMG/CS.jpeg" alt="CS">
         <div class="cs-text">
-          <txt>Cidades sustentáveis são aquelas que buscam equilibrar o desenvolvimento econômico, social e ambiental para
+          <txt>Cidades sustentáveis são aquelas que buscam equilibrar o desenvolvimento econômico, social e ambiental
+            para
             garantir qualidade de vida para seus habitantes sem comprometer o meio ambiente e as gerações futuras. Isso
-            envolve práticas como eficiência energética, gestão de resíduos, transporte público acessível, espaços verdes,
+            envolve práticas como eficiência energética, gestão de resíduos, transporte público acessível, espaços
+            verdes,
             entre outras medidas voltadas para a sustentabilidade.</txt>
         </div>
 
@@ -83,20 +87,20 @@
         regulamentações para promover a transparência, a equidade social e a proteção ambiental.</txt>
     </section>
 
+    <!--Pilares/Pentagono-->   
     <section id="pilares">
-      <div class="pentagon">
-        <button id="btn-prosperidade" onmouseover="openPopup('prosperidade')" onmouseout="closePopup()">Prosperidade</button>
-        <button id="btn-gestao" onmouseover="openPopup('gestao')" onmouseout="closePopup()">Gestão</button>
-        <button id="btn-bem-estar" onmouseover="openPopup('bem-estar')" onmouseout="closePopup()">Bem-estar</button>
-        <button id="btn-seguranca" onmouseover="openPopup('seguranca')" onmouseout="closePopup()">Segurança e Infraestrutura</button>
-        <button id="btn-servicos" onmouseover="openPopup('servicos')" onmouseout="closePopup()">Serviços Básicos</button>
-        <div class="pentagon-background"></div>
+      <div class="pentagono">
+        <button id="btn-prosperidade" onmouseover="openPopup('prosperidade')">Prosperidade</button>
+        <button id="btn-gestao" onmouseover="openPopup('gestao')">Gestão</button>
+        <button id="btn-bem-estar" onmouseover="openPopup('bem-estar')">Bem-estar</button>
+        <button id="btn-seguranca" onmouseover="openPopup('seguranca')">Segurança e Infraestrutura</button>
+        <button id="btn-servicos" onmouseover="openPopup('servicos')">Serviços Básicos</button>
+        <div class="pentagono-background"></div>
       </div>
 
       <div id="popup" class="popup">
         <div id="popup-content"></div>
-        <button id="btn-voltar">Voltar</button>
-        <div id="popup-content"></div>
+        <button onclick="closePopup('btn')">Fechar</button>
       </div>
     </section>
 
@@ -251,128 +255,108 @@
 
     <!--Quiz-->
     <section id="quiz">
-
       <h1>QUIZ</h1>
-
       <div class="questionario-container">
         <div class="carrossel">
-
           <div class="slide active">
-
             <h2>Prosperidade</h2>
-
-            <p>Qual pilar é fundamental para garantir que uma cidade seja verdadeiramente próspera, oferecendo oportunidades
-              para todos e um futuro sustentável?</p>
-
+            <p>Qual pilar é fundamental para garantir que uma cidade seja verdadeiramente próspera, oferecendo
+              oportunidades para todos e um futuro sustentável?</p>
             <div class="respostas">
-              <span class="resposta correta"
-                data-resposta="correta">Uma cidade que se preocupa com o meio ambiente e investe em práticas ecológicas garante
+              <span class="resposta correta" data-resposta="correta">Uma cidade que se preocupa com o meio ambiente e
+                investe em práticas ecológicas garante
                 um futuro mais verde e saudável para seus habitantes, além de atrair investimentos e promover o
                 desenvolvimento econômico.</span>
-              <span class="resposta"
-                data-resposta="incorreta"> A presença de grandes empresas pode gerar empregos, porém não assegura a
-                prosperidade de forma abrangente. O foco deve estar no desenvolvimento local e na geração de oportunidades
-                para todos.</span>
-              <span class="resposta"
-                data-resposta="incorreta">Uma alta densidade populacional pode indicar dinamismo, mas não é garantia de
+              <span class="resposta" data-resposta="incorreta"> A presença de grandes empresas pode gerar empregos,
+                porém não assegura a
+                prosperidade de forma abrangente. O foco deve estar no desenvolvimento local e na geração de
+                oportunidades para todos.</span>
+              <span class="resposta" data-resposta="incorreta">Uma alta densidade populacional pode indicar dinamismo,
+                mas não é garantia de
                 prosperidade. É preciso que essa população tenha acesso a serviços públicos de qualidade e oportunidades
                 para ter uma vida digna.</span>
             </div>
           </div>
-
           <div class="slide offscreen">
             <h2>Gestão</h2>
-
             <p>Em uma cidade que busca o desenvolvimento sustentável, qual elemento é crucial para garantir que as
               decisões sejam tomadas de forma democrática e eficaz, levando em conta o bem-estar de todos?</p>
-
             <div class="respostas">
-              <span class="resposta"
-                data-resposta="incorreta">A construção de novos edifícios deve ser planejada de forma sustentável,
+              <span class="resposta" data-resposta="incorreta">A construção de novos edifícios deve ser planejada de
+                forma sustentável,
                 considerando o impacto ambiental, a eficiência energética e a otimização do uso do espaço urbano.</span>
-              <span class="resposta"
-                data-resposta="incorreta">A tecnologia é uma ferramenta importante para a gestão sustentável, mas não é o
-                pilar central. O foco deve estar em um planejamento estratégico que leve em conta as necessidades da cidade e
-                seus habitantes.</span>
-              <span class="resposta correta"
-                data-resposta="correta">A participação de diferentes setores da sociedade na construção de um plano de longo
+              <span class="resposta" data-resposta="incorreta">A tecnologia é uma ferramenta importante para a gestão
+                sustentável, mas não é o
+                pilar central. O foco deve estar em um planejamento estratégico que leve em conta as necessidades da
+                cidade e seus habitantes.</span>
+              <span class="resposta correta" data-resposta="correta">A participação de diferentes setores da sociedade
+                na construção de um plano de longo
                 prazo para a cidade é fundamental para garantir que as necessidades e os anseios de todos sejam
                 considerados.</span>
             </div>
           </div>
-
           <div class="slide offscreen">
-
             <h2>Bem Estar</h2>
-
             <p>Em uma cidade que busca o bem-estar de seus habitantes, defina o fator que seja fundamental para garantir
               uma vida mais saudável e digna para todos?</p>
-
             <div class="respostas">
-              <span class="resposta"
-                data-resposta="incorreta">A presença de shoppings pode contribuir para a economia da cidade, mas não é o
+              <span class="resposta" data-resposta="incorreta">A presença de shoppings pode contribuir para a economia
+                da cidade, mas não é o
                 principal elemento para o bem-estar da população. O foco deve estar em serviços essenciais como saúde,
                 educação e moradia digna.</span>
-              <span class="resposta correta"
-                data-resposta="correta">Um sistema de saúde universal e de qualidade é essencial para garantir o bem-estar
+              <span class="resposta correta" data-resposta="correta">Um sistema de saúde universal e de qualidade é
+                essencial para garantir o bem-estar
                 da população, promovendo a saúde preventiva e o acesso a cuidados especializados.</span>
-              <span class="resposta"
-                data-resposta="incorreta">A construção de moradias de alto padrão beneficia uma parcela da população, mas não
-                garante o bem-estar para todos. É preciso investir em políticas habitacionais que garantam moradia digna para
-                todos.</span>
+              <span class="resposta" data-resposta="incorreta">A construção de moradias de alto padrão beneficia uma
+                parcela da população, mas não
+                garante o bem-estar para todos. É preciso investir em políticas habitacionais que garantam moradia digna
+                para todos.</span>
             </div>
           </div>
-
-          <div class="slide fora">
-
+          <div class="slide offscreen">
             <h2>Segurança e Infraestrutura</h2>
-
             <p>Para construir uma cidade segura e resiliente, quais pontos são de extrema importância para garantir a
               proteção da população e a prevenção de crimes e acidentes?</p>
-
             <div class="respostas">
-              <span class="resposta correta"
-                data-resposta="correta">Investir em segurança pública, monitoramento inteligente, iluminação adequada e
+              <span class="resposta correta" data-resposta="correta">Investir em segurança pública, monitoramento
+                inteligente, iluminação adequada e
                 design urbano que desestimula a criminalidade é fundamental para garantir um ambiente seguro para
                 todos.</span>
-              <span class="resposta"
-                data-resposta="incorreta">A oferta de lazer pode ser um atrativo para a cidade, mas não garante a segurança
+              <span class="resposta" data-resposta="incorreta">A oferta de lazer pode ser um atrativo para a cidade, mas
+                não garante a segurança
                 da população. O foco deve estar na prevenção de crimes e na proteção dos bens públicos e privados.</span>
-              <span class="resposta"
-                data-resposta="incorreta">A presença de câmeras de segurança pode auxiliar na identificação de crimes, mas
+              <span class="resposta" data-resposta="incorreta">A presença de câmeras de segurança pode auxiliar na
+                identificação de crimes, mas
                 não resolve a raiz do problema. É preciso investir em ações preventivas e em políticas públicas que
                 combatam as causas da violência e da criminalidade.</span>
             </div>
           </div>
-
           <div class="slide offscreen">
-
             <h2>Serviços Básicos</h2>
-
             <p>Em uma cidade que busca garantir o acesso universal a serviços de qualidade, qual elemento é fundamental
               para assegurar o bem-estar da população e a sustentabilidade dos recursos naturais?</p>
-
             <div class="respostas">
-              <span class="resposta"
-                data-resposta="incorreta">A presença de restaurantes de luxo pode contribuir para a economia, porém não
+              <span class="resposta" data-resposta="incorreta">A presença de restaurantes de luxo pode contribuir para a
+                economia, porém não
                 garante o acesso a serviços básicos essenciais como água, energia e educação.</span>
-              <span class="resposta correta"
-                data-resposta="correta">Uma rede de distribuição de água potável eficiente garante o acesso universal à
+              <span class="resposta correta" data-resposta="correta">Uma rede de distribuição de água potável eficiente
+                garante o acesso universal à
                 água de qualidade, minimizando perdas e contribuindo para a gestão sustentável dos recursos hídricos.
               </span>
-              <span class="resposta"
-                data-resposta="incorreta">A construção de um estádio pode ser um investimento importante, mas não assegura o
+              <span class="resposta" data-resposta="incorreta">A construção de um estádio pode ser um investimento
+                importante, mas não assegura o
                 acesso universal a serviços essenciais como água, energia, saneamento básico e educação.</span>
             </div>
           </div>
         </div>
       </div>
     </section>
+    
 
   </div>
 
   <footer>
-    <p>Desenvolvido por Schooby-doo, © 2024</p>
+    <p>Desenvolvido por Ciência da Computação - UNIP, © 2024</p>
   </footer>
 
   <script src="JS/script.js"></script>
