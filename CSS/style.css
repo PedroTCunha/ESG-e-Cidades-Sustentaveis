@@ -1,13 +1,13 @@
 /* Estilos gerais */
 * {
-  font-family: open;
+  font-family:'Roboto', sans-serif; 
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: lightblue;
+  background-color: #008080;
 }
 
 /* Cabeçalho */
@@ -109,7 +109,12 @@ nav ul li a {
 /* ESG */
 #esg {
   height: 600px;
+  margin-top: 20px;
   padding-top: 90px;
+  background-color: #40e0d0;
+  border: 0px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
 }
 
 #esg h1 {
@@ -141,6 +146,7 @@ nav ul li a {
 #cs {
   height: 600px;
   padding-top: 90px;
+  background-color: #40e0d0;
 }
 
 #cs h1 {
@@ -202,7 +208,7 @@ nav ul li a {
   margin-right: auto;
   width: 300px;
   height: 250px;
-  background-color: #007bff;
+  background-color: #40e0d0;
   clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
   z-index: -1;
   margin-bottom: 20px;
@@ -226,6 +232,17 @@ nav ul li a {
   transform-origin: 50% 100%;
   font-size: 12px;
   text-align: center;
+  border: none; /* Sem borda nos botões */
+  border-radius: 5px; /* Borda arredondada */
+  background-color: #fff; /* Cor de fundo dos botões */
+  color: #37c0b2a5; /* Cor do texto dos botões */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transição de cor no hover */
+}
+
+.pentagono button:hover {
+  background-color: #007bff; /* Cor de fundo ao passar o mouse */
+  color: #fff; /* Cor do texto ao passar o mouse */
 }
 
 .pentagono button:nth-child(1) {
@@ -274,6 +291,7 @@ nav ul li a {
 #ranking {
   text-align: center;
   margin-bottom: 40px;
+  background-color: #e0f2f7;
 }
 
 #ranking h1 {
@@ -379,7 +397,12 @@ nav ul li a {
 
 /* Quiz */
 #quiz {
-  margin-bottom: 100px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #40e0d0; 
+  border: 0px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 
 #quiz h1 {
@@ -394,7 +417,7 @@ nav ul li a {
   width: 100%;
   margin: 50px auto;
   font-family: sans-serif;
-  overflow: hidden; /* Adicionado para ocultar os slides fora da tela */
+  overflow: hidden; 
 }
 
 .carrossel {
@@ -479,7 +502,7 @@ nav ul li a {
 
 /* Rodapé */
 footer {
-  background-color: black;
+  background-color: #232734;
   color: #fff;
   text-align: center;
   padding: 20px;
