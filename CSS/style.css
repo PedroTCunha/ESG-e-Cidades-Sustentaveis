@@ -391,9 +391,10 @@ nav ul li a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 65%;
+  width: 100%;
   margin: 50px auto;
   font-family: sans-serif;
+  overflow: hidden; /* Adicionado para ocultar os slides fora da tela */
 }
 
 .carrossel {
@@ -402,24 +403,31 @@ nav ul li a {
 }
 
 .slide {
-  display: flex;
-  flex-direction: row;
+  display: none; /* Inicialmente escondemos todos os slides */
+  flex-direction: column;
   align-items: center;
   width: 100%;
   transition: transform 1s ease-in-out;
-  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .slide.active {
-  display: flex;
+  display: flex; /* Mostramos o slide ativo */
+  position: relative;
+  transform: translateX(0);
+  transition: transform 1s ease-in-out; /* Adicionamos a transição */
 }
 
-.slide > div {
+.slide.previous {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  width: 100%;
+  transform: translateX(-100%);
+}
+
+.slide.next {
+  display: flex;
+  transform: translateX(100%);
 }
 
 .respostas {
@@ -569,7 +577,6 @@ footer {
     height: 70%;
     align-content: center;
   }
-}
 }
 
 /* Estilos para o menu quando ativo (tela pequena) */
