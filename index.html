@@ -5,8 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ESG e Cidades Sustentáveis</title>
-  <link rel="stylesheet" href="CSS/style.css">
+
+    <!--Icone do Site--> 
   <link rel="shortcut icon" href="IMG/Logo_APS.jpg" type="image/x-icon">
+ 
+    <!--CSS-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="CSS/style.css">
+
 </head>
 
 <body>
@@ -40,12 +46,13 @@
 
     <!--ESG-->
     <section id="esg">
-      <h1>ESG (Enviromental, Social and Governance)</h1>
 
       <div class="esg-container">
 
         <div class="esg-text">
-          <txt>ESG é uma sigla que representa três critérios usados para avaliar o desempenho de uma empresa em termos
+            <h1>ESG (Enviromental, Social and Governance)</h1>
+          
+       <txt>ESG é uma sigla que representa três critérios usados para avaliar o desempenho de uma empresa em termos
             de
             sustentabilidade e responsabilidade social: Ambiental (Environmental), Social e de Governança (Governance).
             Esses critérios são usados por investidores para avaliar o impacto de uma empresa no mundo e como ela
@@ -59,12 +66,14 @@
 
     <!--Cidades Sustentáveis-->
     <section id="cs">
-      <h1>Cidades Sustentáveis</h1>
-
       <div class="cs-container">
 
         <img src="IMG/CS.jpeg" alt="CS">
+
+
         <div class="cs-text">
+
+      <h1>Cidades Sustentáveis</h1>
           <txt>Cidades sustentáveis são aquelas que buscam equilibrar o desenvolvimento econômico, social e ambiental
             para
             garantir qualidade de vida para seus habitantes sem comprometer o meio ambiente e as gerações futuras. Isso
@@ -80,34 +89,30 @@
     <!--ESG x Cidades Sustentáveis-->
     <section id="es-cidades">
       <h1>ESG x Cidades Sustentáveis</h1>
-      <txt>ESG e cidades sustentáveis estão relacionados porque ambos se concentram em promover práticas ambientais,
-        sociais e de governança responsáveis ​​e sustentáveis. Empresas que adotam princípios ESG geralmente buscam
-        investir em projetos e operações que contribuam para o desenvolvimento de cidades sustentáveis. Da mesma forma,
-        cidades que buscam se tornar mais sustentáveis geralmente adotam diretrizes ESG em suas políticas e
-        regulamentações para promover a transparência, a equidade social e a proteção ambiental.</txt>
-    </section>
+      <txt>ESG e cidades sustentáveis caminham lado a lado, buscando um futuro mais verde e equitativo. Empresas que adotam os princípios ESG investem em projetos que contribuem para o desenvolvimento urbano sustentável, como sistemas de transporte público eficientes, energia renovável, construção sustentável e gestão de resíduos. Por outro lado, cidades que almejam a sustentabilidade implementam diretrizes ESG em suas políticas, promovendo a transparência, a equidade social e a proteção ambiental, por meio de planos de mobilidade urbana sustentável, edificações verdes, gestão de resíduos sólidos, parques e áreas verdes e governança transparente. Essa relação cria um ciclo virtuoso, onde empresas e cidades se impulsionam mutuamente em direção a um futuro mais próspero e sustentável. As cidades sustentáveis são compostas pelos seguintes pilares:</txt>
 
     <!--Pilares/Pentagono-->   
     <section id="pilares">
       <div class="pentagono">
-        <button id="btn-prosperidade" onmouseover="openPopup('prosperidade')">Prosperidade</button>
-        <button id="btn-gestao" onmouseover="openPopup('gestao')">Gestão</button>
-        <button id="btn-bem-estar" onmouseover="openPopup('bem-estar')">Bem-estar</button>
-        <button id="btn-seguranca" onmouseover="openPopup('seguranca')">Segurança e Infraestrutura</button>
-        <button id="btn-servicos" onmouseover="openPopup('servicos')">Serviços Básicos</button>
+        <button id="btn-prosperidade" onmouseover="openPopup('prosperidade')"><i class='bx bx-money'></i></button>
+        <button id="btn-gestao" onmouseover="openPopup('gestao')"><i class='bx bxs-time'></i></button>
+        <button id="btn-bem-estar" onmouseover="openPopup('bem-estar')"><i class='bx bxs-clinic'></i></button>
+        <button id="btn-seguranca" onmouseover="openPopup('seguranca')"><i class='bx bxs-shield-alt-2'></i></button>
+        <button id="btn-servicos" onmouseover="openPopup('servicos')"><i class='bx bxs-hard-hat'></i></button>
         <div class="pentagono-background"></div>
       </div>
 
       <div id="popup" class="popup">
         <div id="popup-content"></div>
-        <button onclick="closePopup('btn')">Fechar</button>
+        <button onclick="closePopup('btn')"><i class='bx bx-x'></i></button>
       </div>
     </section>
 
+    </section>
     <!--Ranking-->
     <section id="ranking">
 
-      <h1>Ranking de Cidades Sustentáveis</h1>
+      <h1>Ranking das Cidades Sustentáveis</h1>
 
       <div class="carousel-container">
         <div class="carousel-track" id="carousel-track">
@@ -116,25 +121,27 @@
 
             <ol>
 
-              <li>Sãe Caetano do Sul, São Paulo</li>
-              <li>Jundiaí, São Paulo</li>
-              <li>Valinhos, São Paulo</li>
-              <li>Taguaí, São Paulo</li>
-              <li>Saltinho, São Paulo</li>
-              <li>Vinhedo, São Paulo</li>
-              <li>Cerquilho, São Paulo</li>
-              <li>Sertãozinho, São Paulo</li>
-              <li>Limeira, São Paulo</li>
-              <li>Borá, São Paulo</li>
+              <li>Curitiba, Paraná</li>
+              <li>Florianópolis, Santa Catarina</li>
+              <li>São Paulo, São Paulo</li>
+              <li>São Caetano do Sul, São Paulo</li>
+              <li>Campinas, São Paulo</li>
+              <li>Brasília, Distrito Federal</li>
+              <li>Vitória, Espírito Santo</li>
+              <li>Niterói, Rio de Janeiro</li>
+              <li>Salvador, Bahia</li>
+              <li>Rio de Janeiro, Rio de Janeiro</li>
 
             </ol>
+
+              <img src="IMG/brasil.jpg" alt="" align="right">
 
           </div>
           <div class="carousel-slide">
             <h3>Ranking da América</h3>
 
             <ol>
-
+                
               <li>Curitiba, Brasil</li>
               <li>Vancouver, Canadá</li>
               <li>Portland, Estados Unidos</li>
@@ -147,6 +154,8 @@
               <li>Nova York, Estados Unidos</li>
 
             </ol>
+
+              <img src="IMG/america.jpg" alt="" align="right">
 
           </div>
           <div class="carousel-slide">
@@ -167,6 +176,8 @@
 
             </ol>
 
+              <img src="IMG/europa.jpg" alt="" align="right">
+
           </div>
           <div class="carousel-slide">
             <h3>Ranking da África</h3>
@@ -185,6 +196,8 @@
               <li>Windhoek, Namíbia</li>
 
             </ol>
+
+              <img src="IMG/africa.jpg" alt="" align="right">
 
           </div>
           <div class="carousel-slide">
@@ -205,6 +218,8 @@
 
             </ol>
 
+              <img src="IMG/asia.jpg" alt="" align="right">
+
           </div>
           <div class="carousel-slide">
             <h3>Ranking da Oceânia</h3>
@@ -224,10 +239,12 @@
 
             </ol>
 
+              <img src="IMG/oceania.jpg" alt="" align="right">
+
           </div>
           <div class="carousel-slide">
             <h3>Ranking Mundial</h3>
-
+            
             <ol>
 
               <li>Oslo, Noruega</li>
@@ -243,11 +260,13 @@
 
             </ol>
 
+              <img src="IMG/mundial.jpg" alt="" align="right">
+
           </div>
         </div>
         <div class="carousel-nav">
-          <button id="prevBtn">Anterior</button>
-          <button id="nextBtn">Próximo</button>
+          <button id="prevBtn"><i class='bx bx-chevron-left'></i></button>
+          <button id="nextBtn"><i class='bx bx-chevron-right'></i></button>
         </div>
       </div>
 
@@ -358,7 +377,11 @@
   <footer>
     <p>Desenvolvido por Ciência da Computação - UNIP, © 2024</p>
   </footer>
+  
 
+    <!--JavaScript-->
+
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   <script src="JS/script.js"></script>
 </body>
 

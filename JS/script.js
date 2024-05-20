@@ -17,7 +17,7 @@ contentContainer.style.paddingTop = `${headerHeight}px`;
 //LOGICAPOPUP
 const popupContent = {
   'prosperidade': {
-    title: "Prosperidade",
+    title: "<h2>Prosperidade</h2>",
     content: `
 <p>Prosperidade nas cidades vai além de grandes arranha-céus e vitrines chamativas. As cidades sustentáveis
 não apenas oferecem melhor qualidade de vida, como também servem como motores de desenvolvimento econômico.
@@ -36,7 +36,7 @@ população.</li>
 `
   },
   'gestao': {
-    title: "Gestão",
+    title: "<h2>Gestão</h2>",
     content: `
 <p>A gestão em cidades sustentáveis ​​envolve a implementação de políticas e práticas que visam promover o
 desenvolvimento urbano de forma equilibrada, considerando os aspectos ambiental, social e econômico. O
@@ -58,7 +58,7 @@ gestão pública eficiente e transparente.</li>
 `
   },
   'bem-estar': {
-    title: "Bem-Estar",
+    title: "<h2>Bem-Estar</h2>",
     content: `
 <p>O bem-estar nas cidades sustentáveis ​​é uma construção coletiva que exige o engajamento de governos,
 empresas, comunidades e indivíduos. Através da participação cidadã, da implementação de políticas públicas
@@ -77,7 +77,7 @@ todos. Alguns elementos para o bem-estar são:
 `
   },
   'seguranca': {
-    title: "Segurança e Infraestrutura",
+    title: "<h2>Segurança e Infraestrutura</h2>",
     content: `
 <p>A segurança e a infraestrutura são elementos que não podem faltar ​​no desenvolvimento sustentável nas
 cidades. Através de uma abordagem integrada que combine planejamento urbano, tecnologia e participação da
@@ -97,7 +97,7 @@ transporte público.</li>
 `
   },
   'servicos': {
-    title: "Serviços Básicos",
+    title: "<h2>Serviços Básicos</h2>",
     content: `
 <p>Cidades sustentáveis se caracterizam por ir além da mera oferta de serviços básicos. Elas visam garantir o
 acesso universal a serviços de qualidade, com foco na eficiência, na sustentabilidade e na inclusão social.
