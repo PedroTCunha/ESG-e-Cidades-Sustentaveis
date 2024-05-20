@@ -149,20 +149,20 @@ const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 let currentSlide = 0;
 
-// Obtém a largura do container do carrossel
+
 const carouselContainer = document.querySelector('.carousel-container'); 
 let slideWidth = carouselContainer.offsetWidth; // Largura inicial
 
 function updateSlideWidth() {
-  // Atualiza a largura do slide se a janela for redimensionada
+
   slideWidth = carouselContainer.offsetWidth; 
   track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
 }
 
-// Chama a função inicialmente para definir a largura
+
 updateSlideWidth();
 
-// Recalcula a largura do slide quando a janela é redimensionada
+
 window.addEventListener('resize', updateSlideWidth);
 
 prevBtn.addEventListener("click", () => {
@@ -223,7 +223,7 @@ function verificarResposta(resposta) {
       mostrarSlide(slideAtual);
     }
   } else {
-    alert("🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥\n🔥  Alternativa incorreta  🔥\n🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥");
+    alert("🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥\n🔥  Alternativa incorreta  🔥\n🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥");
   }
 }
 
