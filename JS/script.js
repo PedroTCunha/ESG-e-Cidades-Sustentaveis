@@ -171,7 +171,7 @@ prevBtn.addEventListener("click", () => {
 });
 
 nextBtn.addEventListener("click", () => {
-  currentSlide = Math.min(currentSlide + 1, 6); // Máximo de 6 slides (0-indexado)
+  currentSlide = Math.min(currentSlide + 1, 6);
   updateSlideWidth();
 });
 
