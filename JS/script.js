@@ -151,7 +151,7 @@ let currentSlide = 0;
 
 
 const carouselContainer = document.querySelector('.carousel-container'); 
-let slideWidth = carouselContainer.offsetWidth; // Largura inicial
+let slideWidth = carouselContainer.offsetWidth;
 
 function updateSlideWidth() {
 
