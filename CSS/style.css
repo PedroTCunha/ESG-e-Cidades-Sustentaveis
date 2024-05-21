@@ -83,7 +83,6 @@ nav ul li a {
   transition: transform 0.3s ease;
 }
 
-/* Estilos para o menu toggle quando ativo */
 .menu-toggle.active .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
