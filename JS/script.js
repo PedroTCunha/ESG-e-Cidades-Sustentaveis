@@ -223,7 +223,7 @@ function verificarResposta(resposta) {
       mostrarSlide(slideAtual);
     }
   } else {
-    alert("🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥\n🔥  Alternativa incorreta  🔥\n🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥");
+    alert("🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥\n🔥  Alternativa incorreta  🔥\n🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥");
   }
 }
 
